@@ -1,4 +1,5 @@
 @import url('base/reset.css');
+@import url('base/utils.css');
 :root{
     --black:#000000;
     --dark-purple:#4C3FAF;
@@ -6,21 +7,6 @@
     --primary-color:#e2e2e2;
     --secondary-color:#6050dc;
     --white:#FFFFFF;     
-}
-
-/* Common styles */
-
-.cursor{
-    cursor: pointer;
-}
-.flex{
-    display: flex;
-}
-.li-remove-default{
-    list-style:none;
-}
-.link-remove-style{
-    text-decoration: none;
 }
 
 /* Container */
