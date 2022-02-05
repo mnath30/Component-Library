@@ -1,4 +1,6 @@
-html, body, div, span, iframe,h1, h2, h3, a, img, ul, li, aside, canvas, details, footer, header, nav, section, audio, video{
+*,
+*::before, 
+*::after{
     border: 0;
     box-sizing: border-box;
     font-size: 100%;
