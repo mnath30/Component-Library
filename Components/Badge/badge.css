@@ -2,13 +2,13 @@
 @import url('../theme.css');
 @import url('../../documentation/style.css');
 
-.btn{
+.btn {
     padding:0.2rem 0.8rem;
     word-spacing: 0.2rem;
 }
 
 /* Badge */
-.badge{
+.badge {
     border-radius: 0.25rem;
     display: inline-block;
     font-size: 0.75em;
@@ -20,23 +20,23 @@
 }
 
 /* Badge outline */
-.outline{
+.outline {
     border-style: solid;
     border-width: 2px;
 }
 
 /* Disabled badge */
-.removed{
+.removed {
     opacity: 0.4;
 }
 
 /* Pill shaped badge */
-.rounded-pill{
+.rounded-pill {
     border-radius: 0.8rem;
 }
 
 /* Rounded badges */
-.rounded-badge{
+.rounded-badge {
     border-radius: 50%;
     font-size: 0.8rem;
     font-weight: 700;
@@ -46,19 +46,19 @@
 }
 
 /* Badge on texts and icons */
-.text-element{
+.text-element {
     padding: 0.8rem;
     position: relative;
     text-align: center;
     width: max-content;
 }
 
-.icon-element{
+.icon-element {
     position: relative;
     width: max-content;
 }
 
-.badge-on-elements{
+.badge-on-elements {
     position:absolute;
     right:0;
     top:0;

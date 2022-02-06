@@ -1,79 +1,76 @@
 @import url('../component.css');
 @import url('../theme.css');
 @import url('../../documentation/style.css');
-
+@import url('../../base/utils.css');
 
 /* avatar  */
-.avatar{
+.avatar {
     border-radius: 50%;
     height:3rem;
     width: 3rem;
 }
 
 /* avatar size */
-.xs{
+.xs {
     height:1rem;
     width:1rem;
 }
-.sm{
+.sm {
     height:2rem;
     width:2rem;
 }
-.md{
+.md {
     height:3rem;
     width:3rem;
 }
-.lg{
+.lg {
     height:4rem;
     width:4rem;
 }
-.xl{
+.xl {
     height:5rem;
     width:5rem;
 }
-.xxl{
+.xxl {
     height:6rem;
     width:6rem;
 }
 
 /* avatar with default icons */
-.avatar-default{
+.avatar-default {
     background-image: url('../../asset/avatar/default-avatar.svg');
     display: inline-block;
 }
-.avatar-male{
+.avatar-male {
     background-image: url('../../asset/avatar/default-male-avatar.svg');
     display: inline-block;
 }
-.avatar-female{
+.avatar-female {
     background-image: url('../../asset/avatar/default-female-avatar.svg');
     display: inline-block;
 }
 
 /* Avatar with initials */
-.avatar-initials{
+.avatar-initials {
     line-height: 3;
 }
 
 /* border for avatar */
-.border{
+.border {
     border-width:2px;
     border-style:solid;
 }
 
 /* Avatar with badge */
-.avatar-badge{
+.avatar-badge {
     display: inline-block;
     height: max-content;
     position: relative;
     width: max-content;
 }
-.block{
-    display: block;
-}
 
 /* badge on the avatar */
-.avatar-circle{
+.avatar-circle {
     border-radius: 50%;
     bottom: 0;
     display:block;
@@ -84,18 +81,18 @@
 }
 
 /* Status badge styles */
-.busy{
+.busy {
     background-color: var(--danger);
 }
 
-.online{
+.online {
     background-color: var(--success);
 }
 
-.away{
+.away {
     background: var(--warning);
 }
-.offline{
+.offline {
     background-color: var(--secondary);
     line-height:1;
 }
