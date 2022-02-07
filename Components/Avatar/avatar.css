@@ -1,0 +1,99 @@
+@import url('../component.css');
+@import url('../theme.css');
+@import url('../../documentation/style.css');
+@import url('../../base/utils.css');
+
+/* avatar  */
+.avatar {
+    border-radius: 50%;
+    height:3rem;
+    width: 3rem;
+}
+
+/* avatar size */
+.xs {
+    height:1rem;
+    width:1rem;
+}
+.sm {
+    height:2rem;
+    width:2rem;
+}
+.md {
+    height:3rem;
+    width:3rem;
+}
+.lg {
+    height:4rem;
+    width:4rem;
+}
+.xl {
+    height:5rem;
+    width:5rem;
+}
+.xxl {
+    height:6rem;
+    width:6rem;
+}
+
+/* avatar with default icons */
+.avatar-default {
+    background-image: url('../../asset/avatar/default-avatar.svg');
+    display: inline-block;
+}
+.avatar-male {
+    background-image: url('../../asset/avatar/default-male-avatar.svg');
+    display: inline-block;
+}
+.avatar-female {
+    background-image: url('../../asset/avatar/default-female-avatar.svg');
+    display: inline-block;
+}
+
+/* Avatar with initials */
+.avatar-initials {
+    line-height: 3;
+}
+
+/* border for avatar */
+.border {
+    border-width:2px;
+    border-style:solid;
+}
+
+/* Avatar with badge */
+.avatar-badge {
+    display: inline-block;
+    height: max-content;
+    position: relative;
+    width: max-content;
+}
+
+/* badge on the avatar */
+.avatar-circle {
+    border-radius: 50%;
+    bottom: 0;
+    display:block;
+    height:1rem;
+    position: absolute;
+    right: 0;
+    width:1rem;
+}
+
+/* Status badge styles */
+.busy {
+    background-color: var(--danger);
+}
+
+.online {
+    background-color: var(--success);
+}
+
+.away {
+    background: var(--warning);
+}
+.offline {
+    background-color: var(--secondary);
+    line-height:1;
+}
+
