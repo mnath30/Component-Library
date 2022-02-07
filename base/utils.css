@@ -1,15 +1,27 @@
+.absolute {
+    position: absolute;
+}
 .block {
     display: block;
+}
+.cursor{
+    cursor: pointer;
+}
+.flex{
+    display: flex;
 }
 .flex-centered {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.li-remove-default{
+    list-style:none;
+}
+.link-remove-style{
+    text-decoration: none;
+}
 .realtive {
     position: relative;
 }
 
-.absolute {
-    position: absolute;
-}
