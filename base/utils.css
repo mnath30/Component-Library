@@ -1,3 +1,15 @@
 .block {
     display: block;
 }
+.cursor{
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+.li-remove-default{
+    list-style:none;
+}
+.link-remove-style{
+    text-decoration: none;
+}
