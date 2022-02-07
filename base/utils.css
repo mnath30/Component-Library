@@ -4,10 +4,10 @@
 .block {
     display: block;
 }
-.cursor{
+.cursor {
     cursor: pointer;
 }
-.flex{
+.flex {
     display: flex;
 }
 .flex-centered {
@@ -15,10 +15,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.li-remove-default{
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.li-remove-default {
     list-style:none;
 }
-.link-remove-style{
+.link-remove-style {
     text-decoration: none;
 }
 .realtive {
