@@ -1,3 +1,15 @@
 .block {
     display: block;
 }
+.flex-centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.realtive {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

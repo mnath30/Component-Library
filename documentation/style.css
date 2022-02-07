@@ -1,3 +1,4 @@
+@import url('../base/utils.css');
 /* Main section */
 main {
     font-size: 1.2rem;
@@ -25,10 +26,7 @@ main p {
     border:2px;
     border-radius: 12px;
     border-style: solid;
-    display:flex;
-    flex-wrap: wrap;
     gap: 0.8rem;
-    justify-content: center;
     margin:0.8rem auto;
     padding:0.8rem;
     width: 60%;    
