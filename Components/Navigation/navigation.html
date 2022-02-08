@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation-Shuttle UI</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="icon" href="../../asset/img1.svg" />
+  </head>
+  <body>
+    <div class="container"> 
+      <main>
+
+        <!-- Default Navigation  -->
+        <div>
+          <h2>Navigation</h2>
+          <p>
+            The Navigation component is used to display the logo of the webpage and options to navigate to various other pages. The navigation bar can contain menu options, search input bar and icons. Navigation is displayed on the top of the webpage.
+          </p>
+          <h3>Examples</h3>
+          <h4>Usage</h4>
+          <p>Use the <span class="class-names">navigation</span> classname in the parent element to create the navigation component. Add the <span class="class-names">nav-brand-logo</span> classname to the brand logo.Use the <span class="class-names">nav-sub-options</span> classname to create the sub menu items on the header.
+          <br>
+          To create the search bar, use the <span class="class-names">nav-search</span> classname in the parent element. Include the <span class="class-names">nav-search-input</span> classname to the input element and the <span class="class-names">nav-search-btn</span> classname to the search button inside the parent element. 
+          <br>
+          Use the <span class="class-names">nav-active</span> classname to indicate the active menu item.
+          </p>
+          <div class="example-container">
+            <nav class="navigation bg-secondary">
+                <div class="nav-brand-logo">
+                    <img class="nav-img" src="../../asset/img1.svg">
+                </div>
+                <div class="nav-search">
+                    <input class="nav-search-input" type="text" placeholder="Search...">
+                    <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-sub-options"> 
+                    <ul class="nav-ul">
+                        <li class="nav-li nav-active">Item 1</li>
+                        <li class="nav-li">Item 2</li>
+                        <li class="nav-li">Item 3</li>
+                    </ul>
+                </div>
+            </nav>
+          </div>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navigation%2520bg-secondary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav-brand-logo%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522nav-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fimg1.svg%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-search%2522%253E%250A%2509%2509%253Cinput%2520class%253D%2522nav-search-input%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522nav-search-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-sub-options%2522%253E%2520%250A%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2520nav-active%2522%253EItem%25201%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EItem%25202%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EItem%25203%253C%252Fli%253E%250A%2509%2509%253C%252Ful%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+              style="width: 722px; height: 405px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>  
+
+
+        <!-- Navigation with only menu items -->
+        <div>
+          <h4>Navigation with only menu items</h4>
+          <div class="example-container">
+            <nav class="navigation bg-secondary">
+                <div class="nav-brand-logo">
+                    <img class="nav-img" src="../../asset/img1.svg">
+                </div>
+                <h3>Brand Name</h3>
+                <div class="nav-sub-options"> 
+                    <ul class="nav-ul">
+                        <li class="nav-li nav-active">Home</li>
+                        <li class="nav-li">About</li>
+                        <li class="nav-li">Contact</li>
+                    </ul>
+                </div>
+            </nav>
+          </div>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navigation%2520bg-secondary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav-brand-logo%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522nav-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fimg1.svg%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ch3%253EBrand%2520Name%253C%252Fh3%253E%250A%2509%253Cdiv%2520class%253D%2522nav-sub-options%2522%253E%2520%250A%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2520nav-active%2522%253EHome%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EAbout%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EContact%253C%252Fli%253E%250A%2509%2509%253C%252Ful%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+              style="width: 541px; height: 349px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+       
+        
+        <!-- E-commerce Navigation -->
+        <div>
+          <h4>E-commerce Navigation example</h4>
+          <p>Here the <span class="class-names">nav-main-option</span> classname is used to for the main menu items.
+          <br>
+          The search input field is added using the respective <span class="class-names">nav-search</span>, <span class="class-names">nav-search-input</span> and <span class="class-names">nav-search-btn</span> classname.
+          <br> 
+          The <span class="class-names">nav-sub-options</span> classname is used for the sub menu items.</p>
+          <div class="example-container">
+            <nav class="navigation bg-amz-orange">
+                <div class="nav-brand-logo">
+                    <img class="nav-img" src="../../asset/img1.svg">
+                </div>
+                <div class="nav-main-options"> 
+                    <ul class="nav-ul">
+                        <li class="nav-li">MEN</li>
+                        <li class="nav-li">WOMEN</li>
+                        <li class="nav-li">KIDS</li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <input class="nav-search-input" type="text" placeholder="Search...">
+                    <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-sub-options"> 
+                    <ul class="nav-ul">
+                        <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
+                        <li class="nav-li"><i class="far fa-heart"></i></li>
+                        <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                    </ul>
+                </div>
+            </nav>
+          </div>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navigation%2520bg-amz-orange%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav-brand-logo%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522nav-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fimg1.svg%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-main-options%2522%253E%2520%250A%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EMEN%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EWOMEN%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EKIDS%253C%252Fli%253E%250A%2509%2509%253C%252Ful%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-search%2522%253E%250A%2509%2509%253Cinput%2520class%253D%2522nav-search-input%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522nav-search-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-sub-options%2522%253E%2520%250A%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2520nav-active%2522%253E%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%253C%252Ful%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+              style="width: 722px; height: 535px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+
+
+        <!-- Social Media Navigation -->
+        <div>
+          <h4>Social Media Navigation example</h4>
+          <p>When you have two types of menu options in your header, use the <span class="class-names">nav-options</span> classname to wrap the navigation elements in a parent container. 
+          <br>
+          Use the <span class="class-names">nav-main-option</span> classname for the main menu items and use the <span class="class-names">nav-sub-options</span> class name for the sub menu items.
+          </p>
+          <div class="example-container">
+            <nav class="navigation bg-fb-blue text-light">
+                <div class="nav-brand-logo">
+                    <img class="nav-img" src="../../asset/img1.svg">
+                </div>
+                <div class="nav-search">
+                  <input class="nav-search-input" type="text" placeholder="Search...">
+                  <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+                </div>  
+                <div class="nav-options"> 
+                    <div class="nav-main-option">
+                      <ul class="nav-ul">
+                        <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar sm">  
+                        <li class="nav-li">Username</li>
+                        <li class="nav-li nav-active">Home</li>
+                      </ul> 
+                    </div>
+                    <div class="nav-sub-options">
+                      <ul class="nav-ul">
+                        <li class="nav-li"><i class="fas fa-user-friends"></i></li>
+                        <li class="nav-li"><i class="far fa-comment-dots"></i></li>
+                        <li class="nav-li"><i class="fas fa-globe-asia"></i></li>
+                      </ul>   
+                    </div>
+                </div>
+            </nav>
+          </div>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navigation%2520bg-fb-blue%2520text-light%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav-brand-logo%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522nav-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fimg1.svg%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav-search%2522%253E%250A%2509%2509%253Cinput%2520class%253D%2522nav-search-input%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522nav-search-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%2509%253Cdiv%2520class%253D%2522nav-options%2522%253E%2520%250A%2509%2509%253Cdiv%2520class%253D%2522nav-main-option%2522%253E%250A%2509%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520sm%2522%253E%2520%2520%250A%2509%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253EUsername%253C%252Fli%253E%250A%2509%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2520nav-active%2522%253EHome%253C%252Fli%253E%250A%2509%2509%2509%253C%252Ful%253E%2520%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522nav-sub-options%2522%253E%250A%2509%2509%2509%253Cul%2520class%253D%2522nav-ul%2522%253E%250A%2509%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253E%253Ci%2520class%253D%2522fas%2520fa-user-friends%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253E%253Ci%2520class%253D%2522far%2520fa-comment-dots%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%2509%2509%253Cli%2520class%253D%2522nav-li%2522%253E%253Ci%2520class%253D%2522fas%2520fa-globe-asia%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2509%2509%2509%253C%252Ful%253E%2520%2520%2520%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+              style="width: 861px; height: 573px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>  
+
+      </main>
+    </div>
+  </body>
+</html>
