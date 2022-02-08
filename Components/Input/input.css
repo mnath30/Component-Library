@@ -1,0 +1,72 @@
+@import url('../component.css');
+@import url('../theme.css');
+@import url('../../documentation/style.css');
+@import url('../../base/utils.css');
+
+.example-container {
+    border-width:1px;
+}
+/* Form */
+.txt-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.8rem;
+}
+
+/* Input */
+.txt-input {
+    max-width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding:0.4rem;
+    border-radius: 5px;
+}
+.txt-input:focus {
+    outline-color: var(--primary);
+    outline-width: 2px;
+}
+
+/* Input sizes */
+.txt-xm {
+    font-size: 0.4rem;
+}
+.txt-sm {
+    font-size: 0.8rem;
+}
+.txt-md {
+    font-size: 1.2rem;
+}
+.txt-lg {
+    font-size: 1.6rem;
+}
+
+/* Input Styles */
+.filled {
+    background-color: var(--secondary);
+    opacity: 0.6;
+}
+.flushed {
+    border-width:0 0 1px 0;
+    border-radius: 0;
+}
+.flushed:focus {
+    border-width:0 0 2px 0;
+    outline:none ;
+}
+.unstyled {
+    border-width: 0;
+}
+.unstyled:focus {
+    outline: none;
+}
+
+/* Validation texts */
+.txt-validation-error {
+    color: var(--danger);
+    padding: 0.4rem;
+}
+.txt-validation-success {
+    color: var(--success);
+    padding: 0.4rem;
+}
