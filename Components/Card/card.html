@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards-Shuttle UI</title>
+    <link rel="stylesheet" href="card.css" />
+    <link rel="icon" href="asset/img1.svg" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+
+        <!-- Default Card -->
+        <div>
+          <h2>Card</h2>
+          <p>
+            The Card components are used to provide feedback messages for typical user actions. Alerts can have different variants and can also indicate different statuses.
+          </p>
+          <h3>Examples</h3>
+          <h4>Usage</h4>
+          <p>Use the <span class="class-names">card</span> classname to create an alert. Just add the classname to create the alert component and add the background colour classes to create alerts having different colours.</p>
+          <div class="example-container">
+            <div class="card flex-v bg-secondary">
+              <div class="card-img">
+                <img class="responsive-img" src="../../asset/card/card1.jpg" alt="image-of-a-woman">
+              </div>
+              <h5 class="card-header">Marks & Aria</h5>
+              <p class="card-para">Printed Tee
+                <br>Rs. 1500</p>
+              <div class="card-buttons">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Add to Wishlist</button>
+              </div>
+            </div>  
+          </div>
+          <div class="iframe-container">
+            
+          </div>  
+        </div>
+
+
+        <!-- Card with Badges -->
+        <div>
+          <h4>Card with Badges</h4>
+          <p>You can create alerts of different statuses by just adding the respective backgroung colour classes along with <span class="class-names">alert</span> classname. You can also change the text colours of the alert by using the respective text colour classes of your choice.
+            <div class="example-container">
+              <div class="card flex-v bg-secondary">
+                <div class="card-img icon-on-card-img">
+                  <img class="responsive-img" src="../../asset/card/card1.jpg" alt="image-of-a-woman">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-buttons">
+                    <button class="btn">Add to Cart</button>
+                    <button class="btn">Add to Wishlist</button>
+                  </div>
+                </div>  
+              </div>  
+            </div>
+          <div class="iframe-container">
+            
+          </div>
+        </div>
+
+
+        <!-- Card with Dismiss -->
+        <div>
+          <h4>Card with Dismiss</h4>
+          <p>You can also create different alert variants by adding the <span class="class-names">alert-solid</span> classname for solid alert, <span class="class-names">alert-rectangle</span> classname for alert without rounded borders, <span class="class-names">alert-left-accent</span> classname for alert with left border and <span class="class-names">alert-top-accent</span> classname for alert with top border.
+          </p>
+          <div class="example-container">
+            <div class="alert bg-success">This is a default alert</div>
+            <div class="alert bg-success alert-solid">This is a solid alert</div>
+            <div class="alert bg-success alert-rectangle">This is a rectangular alert</div>
+            <div class="alert bg-success alert-rectangle alert-left-accent">This is a rectangular alert with left-accent</div>
+            <div class="alert bg-success alert-rectangle alert-top-accent">This is a rectangular alert with top-accent</div>
+          </div>
+          <div class="iframe-container">
+            
+          </div>
+        </div>
+
+
+        <!-- Card with text overlay  -->
+        <div>
+          <h4>Card with text overlay </h4>
+          <p>You can add a link inside alert by jusy adding the <span class="class-names">alert-link</span> classname to your &lt; a &gt; tag along with the <span class="class-names">alert</span> classname.</p>
+          <div class="example-container">
+            <div class="alert bg-success">This is an alert with an <a href="#/" class="alert-link">example link</a></div>
+          </div>
+          <div class="iframe-container">
+            
+          </div>
+        </div>
+
+
+        <!-- Text only cards -->
+        <div>
+          <h4>Text only cards</h4>
+          <p> You can create alert with icons by adding the <span class="class-names">alert-with-icon</span> classname to the parent element along with the <span class="class-names">alert</span> classname and then include your icons inside the parent element.
+          </p>
+          <div class="example-container">
+            <div class="alert bg-danger alert-with-icon">
+              <i class="fas fa-exclamation-circle"></i>There was an error processing your request
+            </div>
+            <div class="alert bg-primary alert-with-icon">
+              <i class="fas fa-info-circle"></i>Shuttle UI will be going live. Stay tuned!
+            </div>
+            <div class="alert bg-success alert-with-icon">
+              <i class="fas fa-check-circle"></i>Files are downloaded
+            </div>
+          </div>
+          <div class="iframe-container">
+            
+          </div>
+        </div>
+
+
+        <!-- Verical Cards -->
+        <div>
+            <h4>Vertical cards</h4>
+            <p>You can create a dismissible alert with a close button by including the <span class="class-names">alert-dismissible</span> classname along with the <span class="class-names">alert</span> classname and then include your button element with <span class="class-names">dismiss-button</span> classname inside the parent element. 
+            </p>
+            <div class="example-container">
+              <div class="alert bg-danger alert-dismissible">This is a default alert<button class="dismiss-button">X</button></div>
+            </div>
+            <div class="iframe-container">
+              
+            </div>
+        </div>
+
+
+        <!-- Horizontal Cards -->
+        <div>
+            <h4>Horizontal cards</h4>
+            <p>You can create a dismissible alert with a close button by including the <span class="class-names">alert-dismissible</span> classname along with the <span class="class-names">alert</span> classname and then include your button element with <span class="class-names">dismiss-button</span> classname inside the parent element. 
+            </p>
+            <div class="example-container">
+              <div class="alert bg-danger alert-dismissible">This is a default alert<button class="dismiss-button">X</button></div>
+            </div>
+            <div class="iframe-container">
+              
+            </div>
+        </div>
+
+
+        <!-- Cards with shadow -->
+        <div>
+            <h4>Cards with shadow</h4>
+            <p>You can create a dismissible alert with a close button by including the <span class="class-names">alert-dismissible</span> classname along with the <span class="class-names">alert</span> classname and then include your button element with <span class="class-names">dismiss-button</span> classname inside the parent element. 
+            </p>
+            <div class="example-container">
+              <div class="alert bg-danger alert-dismissible">This is a default alert<button class="dismiss-button">X</button></div>
+            </div>
+            <div class="iframe-container">
+              
+            </div>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>

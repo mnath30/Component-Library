@@ -1,0 +1,32 @@
+@import url('../component.css');
+@import url('../theme.css');
+@import url('../../documentation/style.css');
+@import url('../../base/utils.css');
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    gap:0.2rem;
+    align-items: center;
+    box-shadow: 5px 5px 15px;
+}
+.flex-v {
+  max-width: 16rem;
+  flex-direction: column;
+}
+.card-img {
+  padding:0.4rem;
+} 
+.responsive-img {
+  max-width: 100%;
+  height: inherit;
+}
+.card-header {
+  margin:0.4rem;
+}
+.card-para {
+  margin:0.4rem;
+  text-align: center;
+}
+
