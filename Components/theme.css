@@ -52,6 +52,12 @@
 .bg-dark{
     background-color: var(--black);
 }
+.bg-fb-blue{
+    background-color: var(--fb-header-color);
+}
+.bg-amz-orange{
+    background-color: var(--amz-header-color);
+}
 
 /* border colors */
 .border-primary{
