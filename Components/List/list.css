@@ -1,0 +1,41 @@
+@import url('../component.css');
+@import url('../theme.css');
+@import url('../../documentation/style.css');
+@import url('../../base/utils.css');
+
+/* List items */
+.lst {
+    cursor: pointer;
+    list-style: none;
+    margin:0.2rem;
+    padding:0.4rem 0.8rem; 
+}
+.lst:hover {
+    background-color:var(--light-grey);
+       
+}
+
+/* List container */
+.lst-container {
+    border:1px solid var(--secondary);
+    border-radius: 5px 0 5px 0;
+    display: flex;
+}
+
+/* Spaced List */
+.spaced-lst {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0.4rem;
+}
+
+/* Stacked List */
+.stacked-lst { 
+    flex-direction: column;
+    justify-items: flex-start;
+    padding:0;
+    text-align: start;
+    width: 10rem;
+}
+
+
