@@ -1,7 +1,4 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/style.css');
-@import url('../../base/utils.css');
 
 /* Alert */
 .alert {

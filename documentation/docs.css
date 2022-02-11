@@ -1,0 +1,128 @@
+@import url('../base/utils.css');
+@import url('../base/reset.css');
+@import url('../style.css');
+
+/* Body */
+.container-doc {
+    display:grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+    height: 100vh;
+    overflow:auto;
+}
+
+/* Hiding body scrollbar */
+.scrollbar-visibility::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-visibility  {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+/* Header */
+header {
+    grid-area: header;
+}
+
+/* Main section */
+main {
+    font-size: 1.2rem;
+    grid-area: main;
+    overflow-y: scroll;
+    padding-top:2rem; 
+    text-align: center;
+    justify-content: center;
+}
+
+/* Side navigation */
+.side-nav {
+    grid-area: aside;
+    overflow-y:scroll;
+}
+
+/* Content container */
+.container {
+    position: relative;
+}
+
+/* Class Names Style inside documentation*/
+.class-names {
+    font-style:italic;
+    color:var(--class-color);
+}
+
+/*Paragraph */
+main p {
+    margin:0.8rem auto;
+    text-align:left;
+    width: 60%;
+}
+
+/* Examples container */
+.example-container {
+    align-items: center; 
+    border:2px;
+    border-radius: 12px;
+    border-style: solid;
+    gap: 0.8rem;
+    margin:0.8rem auto;
+    padding:0.8rem;
+    width: 60%;    
+}
+
+/* Iframe container  */
+.iframe-container {
+    margin: 0.8rem auto;
+    padding:0 0.8rem;
+}
+iframe {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* Next page navigation section */
+.next-page-nav {
+    text-align: right;
+    padding:0 2rem 0.8rem 0;
+    font-size: 1.1rem;
+}
+.next-page-btn {
+    background-color: inherit;
+}
+.next-page-btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Footer  */
+.content-footer {
+    background-color: var(--primary-color);
+    padding:0.8rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width:770px) {
+    .container-doc{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main" ;
+        overflow: auto;
+    }
+    .side-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .nav-items{
+        display:none;
+    }
+}  
+
+
+
