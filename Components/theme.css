@@ -1,57 +1,62 @@
 @import url('component.css');
 
 /* text colors */
-.text-primary{
+.text-primary {
     color: var(--primary);
 }
-.text-success{
+.text-success {
     color: var(--success);
 }
-.text-secondary{
+.text-secondary {
     color: var(--secondary);
 }
-.text-danger{
+.text-danger {
     color: var(--danger);
 }
-.text-warning{
+.text-warning {
     color: var(--warning);
 }
-.text-info{
+.text-info {
     color: var(--info);
 }
-.text-dark{
+.text-dark {
     color:var(--black);
 }
 
-.text-light{
+.text-light {
     color:var(--white);
 }
 
 /* Backgroung colors */
-.bg-primary{
+.bg-primary {
     background-color: var(--primary);
 }
-.bg-success{
+.bg-success {
     background-color: var(--success);
 }
-.bg-secondary{
+.bg-secondary {
     background-color: var(--secondary);
 }
-.bg-danger{
+.bg-danger {
     background-color: var(--danger);
 }
-.bg-warning{
+.bg-warning {
     background-color: var(--warning);
 }
-.bg-info{
+.bg-info {
     background-color: var(--info);
 }
-.bg-light{
+.bg-light {
     background-color: var(--light-grey);
 }
-.bg-dark{
+.bg-dark {
     background-color: var(--black);
 }
+.bg-card-background {
+    background-color: var(--card-background);
+}
+.bg-card-btn {
+    background-color: var(--class-color);
 .bg-fb-blue{
     background-color: var(--fb-header-color);
 }
@@ -60,27 +65,27 @@
 }
 
 /* border colors */
-.border-primary{
+.border-primary {
     border-color: var(--primary);
 }
-.border-success{
+.border-success {
     border-color: var(--success);
 }
-.border-secondary{
+.border-secondary {
     border-color: var(--secondary);
 }
-.border-danger{
+.border-danger {
     border-color: var(--danger);
 }
-.border-warning{
+.border-warning {
     border-color: var(--warning);
 }
-.border-info{
+.border-info {
     border-color: var(--info);
 }
-.border-light{
+.border-light {
     border-color: var(--light-grey);
 }
-.border-dark{
+.border-dark {
     border-color: var(--black);
 }
