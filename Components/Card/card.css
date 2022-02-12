@@ -1,32 +1,143 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/style.css');
 @import url('../../base/utils.css');
 
+/* Card */
 .card {
-    border-radius: 5px;
-    display: flex;
-    overflow: hidden;
-    gap:0.2rem;
-    align-items: center;
-    box-shadow: 5px 5px 15px;
+  border:1px solid var(--secondary);
+  border-radius: 8px;
+  display: flex;
+  margin: 0.4rem;
+  padding: 0.4rem;   
 }
-.flex-v {
-  max-width: 16rem;
+.card:hover {
+  box-shadow: 4px 4px 50px var(--secondary);
+}
+
+/* Vertical card */
+.card-vert {
   flex-direction: column;
+  max-width: 16rem;
 }
+
+/* Horizontal card */
+.card-horiz {
+  max-width: 20rem;
+  max-height: 15rem;
+}
+
+/* Card image container */
 .card-img {
   padding:0.4rem;
 } 
+
+/* Image */
 .responsive-img {
+  border-radius: 8px;
+  height: 100%;
   max-width: 100%;
-  height: inherit;
-}
-.card-header {
-  margin:0.4rem;
-}
-.card-para {
-  margin:0.4rem;
-  text-align: center;
 }
 
+/* Horizontal Image */
+.card-img-horiz {
+  max-width: 45%;
+}
+
+/* Card header */
+.card-header {
+  font-size: 1.2rem;
+  margin:0.4rem;
+}
+
+/* Card body */
+.card-body {
+  padding: 0.2rem;
+  text-align: left;
+}
+.card-body .card-para {
+  font-size: 1rem;
+  margin: 0.4rem;
+  text-align: left;
+  width: inherit;
+} 
+
+/* Card Button */
+.card-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.btn-card {
+  border-radius: 8px;
+  border-style: none;
+  border-width: 2px;
+  cursor: pointer;
+  margin: 0.2rem;
+  padding:0.4rem 1rem;
+}
+.btn-card-second {
+  background-color:inherit;
+  border-style:solid;
+  border-width: 2px;
+}
+.card-horiz-btn {
+  display:flex;
+  flex-direction: column;
+  padding:0.4rem;
+}
+.btn-card:hover {
+  background-color: var(--card-btn-hover);
+}
+
+/* Card Badge */
+.card-header-with-badge ,.card-with-overlay{
+  position:relative;
+}
+.card-badge {
+  background-color: var(--white);
+  border-radius: 8px;
+  margin: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+}
+.card-top-left-badge {
+  border:1px solid var(--black);
+  left:0;
+  top:0;
+}
+.card-bottom-left-badge {
+  bottom: 0;
+  left: 0;
+}
+.card-top-right-badge {
+  right: 0;
+  top:0;
+}
+.text-only-badge {
+  margin:0;
+}
+
+/* Overlay */
+.card-with-overlay {
+  padding:0;
+}
+.card-overlay {
+  background-color:var(--overlay-color); 
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index:2;
+}
+.overlay-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  top:50%;
+}
+.card-with-overlay:hover {
+  box-shadow: none;
+}
+
+/* Card box shadow */
+.card-box-shadow {
+  box-shadow: 4px 4px 12px;
+}
