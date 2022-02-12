@@ -57,6 +57,11 @@
 }
 .bg-card-btn {
     background-color: var(--class-color);
+.bg-fb-blue{
+    background-color: var(--fb-header-color);
+}
+.bg-amz-orange{
+    background-color: var(--amz-header-color);
 }
 
 /* border colors */
