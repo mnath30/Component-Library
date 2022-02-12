@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alerts-Shuttle UI</title>
+    <title>Alerts - Shuttle UI</title>
     <link rel="stylesheet" href="../../documentation/docs.css"/>
     <link rel="stylesheet" href="alert.css" />
     <link rel="icon" href="../../asset/img1.svg" />
@@ -12,181 +12,180 @@
   </head>
   <body>
 
-    <!-- Header -->
-    <div class="container-doc scrollbar-visibility">
+    <div class="container-doc">
+      <!-- Header Section -->
       <header>
-          <nav class="navigation flex">
-              <div class="nav-brand flex">
-                  <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
-                  <h2 class="nav-title">Shuttle UI</h2>
-              </div>
-              <ul class="nav-items flex">
-                  <li class="li-remove-default cursor">Home</li>
-                  <li class="li-remove-default cursor">Documentation</li>
-              </ul>
-          </nav>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
       </header>
 
       <!-- Side Navigation -->
       <aside class="side-nav">
-          <ul class="nav-items">
-              <li><a href="#">Alert</a></li>
-              <li><a href="../Avatar/avatar.html">Avatar</a></li>
-              <li><a href="../Badge/badge.html">Badge</a></li>
-              <li><a href="../Button/button.html">Button</a></li>              
-              <li><a href="../Card/card.html">Card</a></li>
-              <li><a href="../Image/responsive-image.html">Image</a></li>
-              <li><a href="../Input/Input.html">Input</a></li>              
-              <li><a href="../List/list.html">List</a></li>
-              <li><a href="../Navigation/navigation.html">Navigation</a></li>
-              <li><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
-          </ul>
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+      </ul>
       </aside>
 
-      <!-- Main Page Content  -->
-      <main>
-
+      <!-- Main Page Content  --> 
+      <div class="container">
         <!-- Alert -->
-        <div class="container">
+        <main>
+          <!-- Default Alert -->
+          <div>
+            <h2>Alert</h2>
+            <p>
+            The Alert components are used to provide feedback messages for typical user actions. Alerts can have different variants and can also indicate different statuses.
+            </p>
+            <h3>Examples</h3>
+            <p>The examples of default alert, different alert statuses, alert variants, alerts with link, alerts with icon and dismissible alerts have been provided here.</p>
+            <h4>Default Alert</h4>
+            <p>Use the <span class="class-names">alert</span> classname to create an alert. Just add the classname to create the alert component and add the background colour classes to create alerts having different colours.</p>
+            <div class="example-container">
+              <div class="alert bg-secondary">This is a default alert</div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-secondary%2522%253EThis%2520is%2520a%2520default%2520alert%253C%252Fdiv%253E"
+                style="width: 585px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>  
+          </div>
 
-            <!-- Default Alert -->
-            <div>
-              <h2>Alert</h2>
-              <p>
-                The Alert components are used to provide feedback messages for typical user actions. Alerts can have different variants and can also indicate different statuses.
+
+          <!-- Different Alert Statuses -->
+          <div>
+            <h4>Alert Statuses</h4>
+            <p>You can create alerts of different statuses by just adding the respective backgroung colour classes along with <span class="class-names">alert</span> classname. You can also change the text colours of the alert by using the respective text colour classes of your choice.
+            <div class="example-container">
+              <div class="alert bg-primary">This is a primary alert</div>
+              <div class="alert bg-secondary">This is a secondary alert</div>
+              <div class="alert bg-success">This is a success alert</div>
+              <div class="alert bg-danger">This is a danger alert</div>
+              <div class="alert bg-warning">This is a warning alert</div>
+              <div class="alert bg-dark text-light">This is a dark alert</div>
+              <div class="alert bg-light">This is a light alert</div>
+              <div class="alert bg-info">This is a info alert</div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-primary%2522%253EThis%2520is%2520a%2520primary%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520a%2520success%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-danger%2522%253EThis%2520is%2520a%2520danger%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-warning%2522%253EThis%2520is%2520a%2520warning%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-dark%2520text-light%2522%253EThis%2520is%2520a%2520dark%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-light%2522%253EThis%2520is%2520a%2520light%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-info%2522%253EThis%2520is%2520a%2520info%2520alert%253C%252Fdiv%253E"
+                style="width: 611px; height: 257px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Alert variants -->
+          <div>
+            <h4>Alert variants</h4>
+            <p>You can also create different alert variants by adding the <span class="class-names">alert-solid</span> classname for solid alert, <span class="class-names">alert-rectangle</span> classname for alert without rounded borders, <span class="class-names">alert-left-accent</span> classname for alert with left border and <span class="class-names">alert-top-accent</span> classname for alert with top border.
+            </p>
+            <div class="example-container">
+              <div class="alert bg-success">This is a default alert</div>
+              <div class="alert bg-success alert-solid">This is a solid alert</div>
+              <div class="alert bg-success alert-rectangle">This is a rectangular alert</div>
+              <div class="alert bg-success alert-rectangle alert-left-accent">This is a rectangular alert with left-accent</div>
+              <div class="alert bg-success alert-rectangle alert-top-accent">This is a rectangular alert with top-accent</div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520a%2520default%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-solid%2522%253EThis%2520is%2520a%2520solid%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2522%253EThis%2520is%2520a%2520rectangular%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2520alert-left-accent%2522%253EThis%2520is%2520a%2520rectangular%2520alert%2520with%2520left-accent%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2520alert-top-accent%2522%253EThis%2520is%2520a%2520rectangular%2520alert%2520with%2520top-accent%253C%252Fdiv%253E"
+                style="width: 1024px; height: 238px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Alert with Links  -->
+          <div>
+            <h4>Alert with link</h4>
+            <p>You can add a link inside alert by jusy adding the <span class="class-names">alert-link</span> classname to your &lt; a &gt; tag along with the <span class="class-names">alert</span> classname.</p>
+            <div class="example-container">
+              <div class="alert bg-success">This is an alert with an <a href="#/" class="alert-link">example link</a></div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520an%2520alert%2520with%2520an%2520%253Ca%2520href%253D%2522%2523%252F%2522%2520class%253D%2522alert-link%2522%253Eexample%2520link%253C%252Fa%253E%253C%252Fdiv%253E"
+                style="width: 1001px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Alert with icons -->
+          <div>
+            <h4>Alert with icon</h4>
+            <p> You can create alert with icons by adding the <span class="class-names">alert-with-icon</span> classname to the parent element along with the <span class="class-names">alert</span> classname and then include your icons inside the parent element.
+            </p>
+            <div class="example-container">
+              <div class="alert bg-danger alert-with-icon">
+                <i class="fas fa-exclamation-circle"></i>There was an error processing your request
+              </div>
+              <div class="alert bg-primary alert-with-icon">
+                <i class="fas fa-info-circle"></i>Shuttle UI will be going live. Stay tuned!
+              </div>
+              <div class="alert bg-success alert-with-icon">
+                <i class="fas fa-check-circle"></i>Files are downloaded
+              </div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-danger%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253EThere%2520was%2520an%2520error%2520processing%2520your%2520request%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-primary%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253EShuttle%2520UI%2520will%2520be%2520going%2520live.%2520Stay%2520tuned%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253EFiles%2520are%2520downloaded%250A%253C%252Fdiv%253E"
+                style="width: 810px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Dismissible Alert -->
+          <div>
+              <h4>Dismissible Alert</h4>
+              <p>You can create a dismissible alert with a close button by including the <span class="class-names">alert-dismissible</span> classname along with the <span class="class-names">alert</span> classname and then include your button element with <span class="class-names">dismiss-button</span> classname inside the parent element. 
               </p>
-              <h3>Examples</h3>
-              <h4>Usage</h4>
-              <p>Use the <span class="class-names">alert</span> classname to create an alert. Just add the classname to create the alert component and add the background colour classes to create alerts having different colours.</p>
               <div class="example-container">
-                <div class="alert bg-secondary">This is a default alert</div>
+                <div class="alert bg-danger alert-dismissible">This is a default alert<button class="dismiss-button">X</button></div>
               </div>
               <div class="iframe-container">
                 <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-secondary%2522%253EThis%2520is%2520a%2520default%2520alert%253C%252Fdiv%253E"
-                  style="width: 585px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>  
-            </div>
-
-
-            <!-- Different Alert Statuses -->
-            <div>
-              <h4>Alert Statuses</h4>
-              <p>You can create alerts of different statuses by just adding the respective backgroung colour classes along with <span class="class-names">alert</span> classname. You can also change the text colours of the alert by using the respective text colour classes of your choice.
-              <div class="example-container">
-                <div class="alert bg-primary">This is a primary alert</div>
-                <div class="alert bg-secondary">This is a secondary alert</div>
-                <div class="alert bg-success">This is a success alert</div>
-                <div class="alert bg-danger">This is a danger alert</div>
-                <div class="alert bg-warning">This is a warning alert</div>
-                <div class="alert bg-dark text-light">This is a dark alert</div>
-                <div class="alert bg-light">This is a light alert</div>
-                <div class="alert bg-info">This is a info alert</div>
-              </div>
-              <div class="iframe-container">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-primary%2522%253EThis%2520is%2520a%2520primary%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520a%2520success%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-danger%2522%253EThis%2520is%2520a%2520danger%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-warning%2522%253EThis%2520is%2520a%2520warning%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-dark%2520text-light%2522%253EThis%2520is%2520a%2520dark%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-light%2522%253EThis%2520is%2520a%2520light%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-info%2522%253EThis%2520is%2520a%2520info%2520alert%253C%252Fdiv%253E"
-                  style="width: 611px; height: 257px; border:0; transform: scale(1); overflow:hidden;"
+                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-danger%2520alert-dismissible%2522%253EThis%2520is%2520a%2520default%2520alert%253Cbutton%2520class%253D%2522dismiss-button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E"
+                  style="width: 1024px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
                   sandbox="allow-scripts allow-same-origin">
                 </iframe>
               </div>
-            </div>
-
-
-            <!-- Alert variants -->
-            <div>
-              <h4>Alert variants</h4>
-              <p>You can also create different alert variants by adding the <span class="class-names">alert-solid</span> classname for solid alert, <span class="class-names">alert-rectangle</span> classname for alert without rounded borders, <span class="class-names">alert-left-accent</span> classname for alert with left border and <span class="class-names">alert-top-accent</span> classname for alert with top border.
-              </p>
-              <div class="example-container">
-                <div class="alert bg-success">This is a default alert</div>
-                <div class="alert bg-success alert-solid">This is a solid alert</div>
-                <div class="alert bg-success alert-rectangle">This is a rectangular alert</div>
-                <div class="alert bg-success alert-rectangle alert-left-accent">This is a rectangular alert with left-accent</div>
-                <div class="alert bg-success alert-rectangle alert-top-accent">This is a rectangular alert with top-accent</div>
-              </div>
-              <div class="iframe-container">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520a%2520default%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-solid%2522%253EThis%2520is%2520a%2520solid%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2522%253EThis%2520is%2520a%2520rectangular%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2520alert-left-accent%2522%253EThis%2520is%2520a%2520rectangular%2520alert%2520with%2520left-accent%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-rectangle%2520alert-top-accent%2522%253EThis%2520is%2520a%2520rectangular%2520alert%2520with%2520top-accent%253C%252Fdiv%253E"
-                  style="width: 1024px; height: 238px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
-            </div>
-
-
-            <!-- Alert with Links  -->
-            <div>
-              <h4>Alert with link</h4>
-              <p>You can add a link inside alert by jusy adding the <span class="class-names">alert-link</span> classname to your &lt; a &gt; tag along with the <span class="class-names">alert</span> classname.</p>
-              <div class="example-container">
-                <div class="alert bg-success">This is an alert with an <a href="#/" class="alert-link">example link</a></div>
-              </div>
-              <div class="iframe-container">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-success%2522%253EThis%2520is%2520an%2520alert%2520with%2520an%2520%253Ca%2520href%253D%2522%2523%252F%2522%2520class%253D%2522alert-link%2522%253Eexample%2520link%253C%252Fa%253E%253C%252Fdiv%253E"
-                  style="width: 1001px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
-            </div>
-
-
-            <!-- Alert with icons -->
-            <div>
-              <h4>Alert with icon</h4>
-              <p> You can create alert with icons by adding the <span class="class-names">alert-with-icon</span> classname to the parent element along with the <span class="class-names">alert</span> classname and then include your icons inside the parent element.
-              </p>
-              <div class="example-container">
-                <div class="alert bg-danger alert-with-icon">
-                  <i class="fas fa-exclamation-circle"></i>There was an error processing your request
-                </div>
-                <div class="alert bg-primary alert-with-icon">
-                  <i class="fas fa-info-circle"></i>Shuttle UI will be going live. Stay tuned!
-                </div>
-                <div class="alert bg-success alert-with-icon">
-                  <i class="fas fa-check-circle"></i>Files are downloaded
-                </div>
-              </div>
-              <div class="iframe-container">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-danger%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253EThere%2520was%2520an%2520error%2520processing%2520your%2520request%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-primary%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253EShuttle%2520UI%2520will%2520be%2520going%2520live.%2520Stay%2520tuned%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520bg-success%2520alert-with-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253EFiles%2520are%2520downloaded%250A%253C%252Fdiv%253E"
-                  style="width: 810px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
-            </div>
-
-
-            <!-- Dismissible Alert -->
-            <div>
-                <h4>Dismissible Alert</h4>
-                <p>You can create a dismissible alert with a close button by including the <span class="class-names">alert-dismissible</span> classname along with the <span class="class-names">alert</span> classname and then include your button element with <span class="class-names">dismiss-button</span> classname inside the parent element. 
-                </p>
-                <div class="example-container">
-                  <div class="alert bg-danger alert-dismissible">This is a default alert<button class="dismiss-button">X</button></div>
-                </div>
-                <div class="iframe-container">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-danger%2520alert-dismissible%2522%253EThis%2520is%2520a%2520default%2520alert%253Cbutton%2520class%253D%2522dismiss-button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E"
-                    style="width: 1024px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
-                </div>
-            </div>
-            <div class="next-page-nav">
-              <button class="prev-page-btn"><a href="../Avatar/avatar.html">Previous<br>Get Started</a></button>
-              <button class="next-page-btn"><a href="../Avatar/avatar.html">Next<br>Avatar</a></button>
-            </div>
-            <footer class="content-footer">
-              &copy; 2022 Shuttle UI, All Rights Reserved.
-            </footer> 
-        </div>
-      </main>
+          </div>
+          <div class="both-pg page-nav">
+            <button class="prev-page-btn"><a href="../../documentation/doc.html">Previous<br>Introduction</a></button>
+            <button class="next-page-btn"><a href="../Avatar/avatar.html">Next<br>Avatar</a></button>
+          </div>
+          <footer class="content-footer">
+            &copy; 2022 Shuttle UI, All Rights Reserved.
+          </footer>
+        </main> 
+      </div>
     </div>
-  
     
   </body>
 </html>

@@ -4,47 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text Utility-Shuttle UI</title>
+    <title>Text Utility - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css">
     <link rel="stylesheet" href="textUtilities.css" />
     <link rel="icon" href="../../asset/img1.svg" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <!-- Header -->
+
     <div class="container-doc">
+      <!-- Header Section -->
       <header>
-          <nav class="navigation flex">
-              <div class="nav-brand flex">
-                  <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
-                  <h2 class="nav-title">Shuttle UI</h2>
-              </div>
-              <ul class="nav-items flex">
-                  <li class="li-remove-default cursor">Home</li>
-                  <li class="li-remove-default cursor">Documentation</li>
-              </ul>
-          </nav>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
       </header>
 
       <!-- Side Navigation -->
       <aside class="side-nav">
-          <ul class="nav-items">
-              <li><a href="../Alert/alert.html">Alert</a></li>
-              <li><a href="../Avatar/avatar.html">Avatar</a></li>
-              <li><a href="../Badge/badge.html">Badge</a></li>
-              <li><a href="../Button/button.html">Button</a></li>              
-              <li><a href="../Card/card.html">Card</a></li>
-              <li><a href="../Image/responsive-image.html">Image</a></li>
-              <li><a href="../Input/Input.html">Input</a></li>              
-              <li><a href="../List/list.html">List</a></li>
-              <li><a href="../Navigation/navigation.html">Navigation</a></li>
-              <li><a href="#">Text Utilities</a></li>
-          </ul>
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="../Alert/alert.html">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Text Utilities</a></li>
+        </ul>
       </aside>
 
       <!-- Main Page Content  -->
-      <div class="main">
-        <div class="container">
-          <main>
+      <div class="container">
+        <!-- Text Utilities -->
+        <main>
 
             <!-- Headings -->
             <div>
@@ -53,7 +56,8 @@
                 By using the classes mentioned here, different styles can be added to various texts and headings.
               </p>
               <h3>Examples</h3>
-              <h4>Usage</h4>
+              <p>The examples of different heading sizes, text alignmnets, text sizes, font weights, italics , striked text, underlined texts and text of different font colours are provided.</p>
+              <h4>Headings</h4>
               <p>Use the <span class="class-names">heading-h1, heading-h2, heading-h3, heading-h4, heading-h5 or heading-h6</span> classnames to create respective headings of different sizes.</p>
               <div class="example-container">
                 <h1 class="heading-h1">Heading Content 1</h1>
@@ -157,10 +161,17 @@
                   </iframe>
                 </div>
             </div>
+            <div class="only-prev-pg page-nav">
+              <button class="prev-page-btn"><a href="../Navigation/navigation.html">Previous<br>Navigation</a></button>
+            </div>
+            <footer class="content-footer">
+              &copy; 2022 Shuttle UI, All Rights Reserved.
+            </footer>
 
-          </main>
-        </div>
+          
+        </main>
       </div>
-    </div>    
+    </div>
+
   </body>
 </html>

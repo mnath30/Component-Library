@@ -1,8 +1,9 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/docs.css');
+@import url('../../base/reset.css');
+@import url('../../base/utils.css');
+@import url('../Avatar/avatar.css');
 
-.btn {
+.badge-btn {
     padding:0.2rem 0.8rem;
     word-spacing: 0.2rem;
 }

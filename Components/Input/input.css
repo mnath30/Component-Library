@@ -1,6 +1,5 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/docs.css');
+@import url('../../base/reset.css');
 @import url('../../base/utils.css');
 
 .example-container {

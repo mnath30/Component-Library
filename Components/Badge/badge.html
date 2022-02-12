@@ -4,49 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shuttle UI</title>
+    <title>Badge - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css">
     <link rel="stylesheet" href="badge.css" />
-    <link rel="icon" href="asset/img1.svg" />
+    <link rel="icon" href="../../asset/img1.svg" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <!-- Header -->
+    
     <div class="container-doc">
+      <!-- Header Section -->
       <header>
-          <nav class="navigation flex">
-              <div class="nav-brand flex">
-                  <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
-                  <h2 class="nav-title"><a class="link-remove-style" href="../../index.html">Shuttle UI</a></h2>
-              </div>
-              <ul class="nav-items flex">
-                  <li class="li-remove-default cursor">Home</li>
-                  <li class="li-remove-default cursor">Documentation</li>
-              </ul>
-          </nav>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
       </header>
 
       <!-- Side Navigation -->
       <aside class="side-nav">
-          <ul class="nav-items">
-              <li><a href="../Alert/alert.html">Alert</a></li>
-              <li><a href="../Avatar/avatar.html">Avatar</a></li>
-              <li><a href="#">Badge</a></li>
-              <li><a href="../Button/button.html">Button</a></li>              
-              <li><a href="../Card/card.html">Card</a></li>
-              <li><a href="../Image/responsive-image.html">Image</a></li>
-              <li><a href="../Input/Input.html">Input</a></li>              
-              <li><a href="../List/list.html">List</a></li>
-              <li><a href="../Navigation/navigation.html">Navigation</a></li>
-              <li><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
-          </ul>
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="../Alert/alert.html">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+        </ul>
       </aside>
 
       <!-- Main Page Content  -->
-      <div class="main">
-
-        <div class="container">  
+      <div class="container">
+          <!-- Badge -->
           <main>
-
             <!-- Default Badge Component -->
             <div>
                 <h2>Badge</h2>
@@ -54,7 +55,8 @@
                   Badges are used as status descriptors for UI elements.They can be used to highlight an item's status for quick recognition.
                 </p>
                 <h3>Examples</h3>
-                <h4>Usage</h4>
+                <p>The examples of default badge, coloured badges, different badge variants, pill badges, button with badge, text with badge, badge on icons and badge on avatars have been provided.</p>
+                <h4>Default Badge</h4>
                 <p>Use the <span class="class-names">badge</span> class to create a badge. Just add the class name to your element and you can also use the various background colour classes and text color classes to create badges of different styles.</p>
                 <div class="example-container flex-centered">
                   <div class="badge bg-light">Default</div>
@@ -143,12 +145,12 @@
                 <h4>Button with Badge</h4>
                 <p>You can also use the badge inside a button element.</p>
                 <div class="example-container flex-centered">
-                    <button class="btn">Notification<span class="badge bg-primary">6</span></button>
+                    <button class="badge-btn">Notification<span class="badge bg-primary">6</span></button>
                 </div>
                 <div class="iframe-container">
                   <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253ENotification%253Cspan%2520class%253D%2522badge%2520bg-primary%2522%253E6%253C%252Fspan%253E%253C%252Fbutton%253E"
-                    style="width: 749px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522example-container%2520flex-centered%2522%253E%250A%2509%253Cbutton%2520class%253D%2522badge-btn%2522%253ENotification%253Cspan%2520class%253D%2522badge%2520bg-primary%2522%253E6%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    style="width: 835px; height: 163px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                   </iframe>
                 </div>
@@ -212,21 +214,28 @@
                 <div class="example-container flex-centered">
                   <div class="avatar-badge">
                     <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar block"/>
-                    <div class="avatar-circle busy border"></div>
+                    <div class="avatar-circle busy avatar-border"></div>
                   </div>
                 </div>
                 <div class="iframe-container">
                   <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520busy%2520border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                    style="width: 775px; height: 183px; border:0; transform: scale(1); overflow:hidden;"
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520busy%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 774px; height: 181px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                   </iframe>
                 </div>
             </div> 
-
+            <div class="both-pg page-nav">
+              <button class="prev-page-btn"><a href="../Avatar/avatar.html">Previous<br>Avatar</a></button>
+              <button class="next-page-btn"><a href="../Button/button.html">Next<br>Button</a></button>
+            </div>
+            <footer class="content-footer">
+              &copy; 2022 Shuttle UI, All Rights Reserved.
+            </footer>
           </main>
-        </div>
       </div>
-    </div>    
+      
+    </div>  
+
   </body>
 </html>

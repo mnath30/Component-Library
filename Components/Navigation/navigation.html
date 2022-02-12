@@ -4,47 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation-Shuttle UI</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="navigation.css" />
+    <title>Navigation - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css">
+    <link rel="stylesheet" href="navigation.css" /> 
     <link rel="icon" href="../../asset/img1.svg" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <!-- Header -->
+
     <div class="container-doc">
+      <!-- Header Section -->
       <header>
-          <nav class="navigation flex">
-              <div class="nav-brand flex">
-                  <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
-                  <h2 class="nav-title">Shuttle UI</h2>
-              </div>
-              <ul class="nav-items flex">
-                  <li class="li-remove-default cursor">Home</li>
-                  <li class="li-remove-default cursor">Documentation</li>
-              </ul>
-          </nav>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
       </header>
 
       <!-- Side Navigation -->
       <aside class="side-nav">
-          <ul class="nav-items">
-              <li><a href="../Alert/alert.html">Alert</a></li>
-              <li><a href="../Avatar/avatar.html">Avatar</a></li>
-              <li><a href="../Badge/badge.html">Badge</a></li>
-              <li><a href="../Button/button.html">Button</a></li>              
-              <li><a href="../Card/card.html">Card</a></li>
-              <li><a href="../Image/responsive-image.html">Image</a></li>
-              <li><a href="../Input/Input.html">Input</a></li>              
-              <li><a href="../List/list.html">List</a></li>
-              <li><a href="#">Navigation</a></li>
-              <li><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
-          </ul>
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="../Alert/alert.html">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+        </ul>
       </aside>
 
       <!-- Main Page Content  -->
-      <div class="main">
-        <div class="container"> 
-          <main>
+      <div class="container"> 
+        <!-- Navigation -->
+        <main>
 
             <!-- Default Navigation  -->
             <div>
@@ -53,7 +56,8 @@
                 The Navigation component is used to display the logo of the webpage and options to navigate to various other pages. The navigation bar can contain menu options, search input bar and icons. Navigation is displayed on the top of the webpage.
               </p>
               <h3>Examples</h3>
-              <h4>Usage</h4>
+              <p>The examples of default navigation with search bar, navigation with only menu items, e-commerce navigation and social media navigation are provided.</p>
+              <h4>Default Navigation</h4>
               <p>Use the <span class="class-names">navigation</span> classname in the parent element to create the navigation component. Add the <span class="class-names">nav-brand-logo</span> classname to the brand logo.Use the <span class="class-names">nav-sub-options</span> classname to create the sub menu items on the header.
               <br>
               To create the search bar, use the <span class="class-names">nav-search</span> classname in the parent element. Include the <span class="class-names">nav-search-input</span> classname to the input element and the <span class="class-names">nav-search-btn</span> classname to the search button inside the parent element. 
@@ -200,11 +204,19 @@
                   sandbox="allow-scripts allow-same-origin">
                 </iframe>
               </div>
-            </div>  
+            </div> 
+            <div class="both-pg page-nav">
+              <button class="prev-page-btn"><a href="../List/list.html">Previous<br>List</a></button>
+              <button class="next-page-btn"><a href="../TextUtilities/textUtilities.html">Next<br>Text Utilities</a></button>
+            </div>
+            <footer class="content-footer">
+              &copy; 2022 Shuttle UI, All Rights Reserved.
+            </footer> 
 
-          </main>
-        </div>
+        </main>
       </div>
-    </div>    
+    
+    </div> 
+
   </body>
 </html>

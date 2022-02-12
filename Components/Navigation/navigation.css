@@ -1,6 +1,7 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/docs.css');
+@import url('../../base/reset.css');
+@import url('../../base/utils.css');
+@import url('../Avatar/avatar.css');
 
 /* Navigation */
 .navigation {
@@ -12,7 +13,6 @@
     padding:0 0.4rem;
     position: sticky;
     top: 0;
-
 }
 
 /* Padding and margin to nav elements */
@@ -49,6 +49,7 @@
 .nav-options {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 /* Navigation Main options */

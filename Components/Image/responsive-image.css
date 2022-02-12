@@ -1,17 +1,19 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/docs.css');
+@import url('../../base/reset.css');
 @import url('../../base/utils.css');
 
 /* Image containers styling */
 .example-container-img,.example-container-img-v, .example-container-img-r {
     border:2px solid var(--black);
+    border-radius: 8px;
     margin: 0.8rem auto;
     max-width: 50%;
     padding:0.8rem; 
 }
 .example-container-img-v {
+    border-radius: 8px;
     height: 20rem;
+    padding:0;
 }
 .example-container-img-r {
     max-width: 30%;
@@ -19,9 +21,11 @@
 
 /* Responsive image */
 .responsive-img {
-    height: inherit;
+    border-radius: 16px;
+    height:inherit;
     max-width: 100%;
     overflow: hidden;
+    padding:0.8rem;
 }
 
 /* Round image */

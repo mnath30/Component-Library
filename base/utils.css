@@ -4,6 +4,11 @@
 .block {
     display: block;
 }
+.border {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+}
 .cursor {
     cursor: pointer;
 }
@@ -18,12 +23,6 @@
 .flex-column {
     display: flex;
     flex-direction: column;
-}
-.li-remove-default {
-    list-style:none;
-}
-.link-remove-style {
-    text-decoration: none;
 }
 .realtive {
     position: relative;
