@@ -7,7 +7,8 @@
     --light-purple:#7C6FE2;
     --primary-color:#9381ff66;
     --secondary-color:#6050dc;
-    --white:#FFFFFF;     
+    --white:#FFFFFF;  
+    --grey-border:#C4C1C7;   
 }
 
 
@@ -117,6 +118,7 @@ main p {
 .example-container {
     align-items: center; 
     border:2px;
+    border-color: var(--grey-border);
     border-radius: 12px;
     border-style: solid;
     gap: 0.8rem;
