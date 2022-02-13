@@ -1,6 +1,5 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/style.css');
+@import url('../../base/reset.css');
 @import url('../../base/utils.css');
 
 /* avatar  */
@@ -11,27 +10,27 @@
 }
 
 /* avatar size */
-.xs {
+.avatar-xs {
     height:1rem;
     width:1rem;
 }
-.sm {
+.avatar-sm {
     height:2rem;
     width:2rem;
 }
-.md {
+.avatar-md {
     height:3rem;
     width:3rem;
 }
-.lg {
+.avatar-lg {
     height:4rem;
     width:4rem;
 }
-.xl {
+.avatar-xl {
     height:5rem;
     width:5rem;
 }
-.xxl {
+.avatar-xxl {
     height:6rem;
     width:6rem;
 }
@@ -52,11 +51,11 @@
 
 /* Avatar with initials */
 .avatar-initials {
-    line-height: 3;
+    line-height: 2.5;
 }
 
 /* border for avatar */
-.border {
+.avatar-border {
     border-width:2px;
     border-style:solid;
 }
@@ -94,6 +93,6 @@
 }
 .offline {
     background-color: var(--secondary);
-    line-height:1;
+    line-height:0.6;
 }
 

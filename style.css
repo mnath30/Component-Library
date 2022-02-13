@@ -1,17 +1,18 @@
 @import url('base/reset.css');
 @import url('base/utils.css');
-:root{
+
+/* Colours for landing page */
+:root {
     --black:#000000;
     --dark-purple:#4C3FAF;
     --light-purple:#7C6FE2;
-    --primary-color:#e2e2e2;
+    --primary-color:#9381ff66;
     --secondary-color:#6050dc;
     --white:#FFFFFF;     
 }
 
 /* Container */
-
-.container{
+.landing-pg-container {
     display:grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -22,30 +23,32 @@
 }
 
 /* Header */
-
-header{
+header {
     background-color: var(--primary-color);
     grid-area: header;
 }
-.navigation{
+.pg-navigation{
     padding:0.2rem 0.8rem;
 }
 .nav-brand{
     font-size: 1.5rem;
     padding:0 0.8rem;
 }
-.nav-title,.nav-items li{
+.pg-nav-title,.pg-nav-items li{
     padding:0.8rem;
 }
-.nav-items{  
+.pg-nav-items{  
     margin:auto 0 auto auto;
 }
-.nav-items li{
+.pg-nav-items li{
     font-size: 1rem;
     font-weight:bold;
+    margin: 0.4rem;
+    padding: 0.4rem;
 }
-.nav-items li:hover{
+.pg-nav-items li:hover{
     border:1px solid var(--dark-purple);
+    border-radius: 8px;
     color: var(--dark-purple);   
 }
 .round-image{
@@ -56,7 +59,6 @@ header{
 }
 
 /* Main section */
-
 .main-section-heading{
     grid-area: content-para;
     margin:auto;
@@ -105,7 +107,6 @@ header{
 }
 
 /* footer */
-
 .footer{
     background-color: var(--primary-color);
     grid-area: footer;
@@ -114,16 +115,15 @@ header{
 }
 
 /* Media Queries */
-
 @media only screen and (max-width:770px) {
-    .container{
+    .landing-pg-container{
         grid-template-areas:
         "header"
         "content-image"
         "content-para"
         "footer" ;
     }
-    .navigation{
+    .pg-navigation{
         flex-wrap: wrap;
     }
     .content{
@@ -135,7 +135,7 @@ header{
 }
 
 @media only screen and (max-width:520px) {
-    .nav-items{
+    .pg-nav-items{
         display:none;
     }
     .main-section-btn{

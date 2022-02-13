@@ -1,0 +1,207 @@
+@import url('../base/utils.css');
+@import url('../base/reset.css');
+/* Colours for documentation page */
+:root {
+    --black:#000000;
+    --dark-purple:#4C3FAF;
+    --light-purple:#7C6FE2;
+    --primary-color:#9381ff66;
+    --secondary-color:#6050dc;
+    --white:#FFFFFF;  
+    --grey-border:#C4C1C7;   
+}
+
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    grid-area: header;
+}
+.pg-navigation{
+    padding:0.2rem 0.8rem;
+}
+.nav-brand{
+    font-size: 1.5rem;
+    padding:0 0.8rem;
+}
+.pg-nav-title,.pg-nav-items li{
+    padding:0.8rem;
+}
+.pg-nav-items{  
+    margin:auto 0 auto auto;
+}
+.pg-nav-items li{
+    font-size: 1rem;
+    font-weight:bold;
+    margin: 0.4rem;
+    padding: 0.4rem;
+}
+.pg-nav-items li:hover{
+    border:1px solid var(--dark-purple);
+    border-radius: 8px;
+    color: var(--dark-purple);   
+}
+.round-image{
+    background-color: black;
+    border-radius: 50%; 
+    transform: rotate(26deg);
+    width:48px;
+}
+header .pg-nav-title, header .pg-nav-items li {
+    color: var(--dark-purple);
+}
+
+/* Body */
+.container-doc {
+    display:grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns:1fr 4fr;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+    height: 100vh;
+    overflow:auto;
+}
+
+/* Main section */
+.container {
+    font-size: 1.2rem;
+    grid-area: main;
+    overflow-y: scroll;
+    padding-top:2rem; 
+    text-align: center;
+    justify-content: center;
+}
+
+/* Side navigation */
+.side-nav { 
+    font-size: 1.2rem;
+    grid-area: aside;
+    margin: 0.8rem 0.2rem;
+    overflow-y:scroll;
+    padding:0.2rem 0.2rem;
+}   
+.nav-items {
+    box-shadow: 4px 0px 8px -2px var(--primary-color);
+}
+.side-nav-item {
+    margin: 0.2rem; 
+}
+.side-nav-item:hover {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+.active-side-link {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+.side-nav-item a {
+    color: var(--dark-purple);
+    display: block;
+    padding:0.8rem;
+}
+
+/* Class Names Style inside documentation*/
+.class-names {
+    font-style:italic;
+    color:var(--class-color);
+}
+
+/*Paragraph */
+main p {
+    margin:0.8rem auto;
+    text-align:left;
+    width: 60%;
+}
+
+/* Examples container */
+.example-container {
+    align-items: center; 
+    border:2px;
+    border-color: var(--grey-border);
+    border-radius: 12px;
+    border-style: solid;
+    gap: 0.8rem;
+    margin:0.8rem auto;
+    padding:0.8rem;
+    width: 70%;    
+}
+
+/* Iframe container  */
+.iframe-container {
+    margin: 0.8rem auto;
+    padding:0 0.8rem;
+}
+iframe {
+    border-radius: 12px;
+    max-width:100%;
+}
+
+/* Next and previous page navigation section */
+.page-nav {
+    font-size: 1.1rem;
+    padding:0 2rem 0.8rem 0;
+}
+.only-next-pg {
+    text-align: right;
+}
+.only-prev-pg {
+    text-align: left;
+}
+.both-pg {
+    display: flex;
+    justify-content: space-between;
+}
+.next-page-btn,.prev-page-btn {
+    background-color: inherit;
+    padding: 0.2rem 1.6rem;
+}
+.next-page-btn:hover ,.prev-page-btn:hover {
+    border: 1px solid var(--dark-purple);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Footer  */
+.content-footer {
+    background-color: var(--primary-color);
+    grid-area: footer;
+    padding:0.8rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width:770px) {
+    .container-doc{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main" ;
+        overflow: auto;
+    }
+    .pg-navigation{
+        flex-wrap: wrap;
+    }
+    .side-nav {
+        display: none;
+    }
+    main p {
+        margin:0.4rem auto;
+        text-align:left;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .pg-nav-items{
+        display:none;
+    }
+    main p {
+        margin:0.4rem auto;
+        text-align:left;
+        max-width: 100%;
+    }
+}  
+
+
+

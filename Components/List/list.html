@@ -4,73 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lists-Shuttle UI</title>
+    <title>List - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css"/>
     <link rel="stylesheet" href="list.css" />
     <link rel="icon" href="../../asset/img1.svg" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <div class="container">
-      <main>
-
-        <!-- Lists -->
-        <div>
-          <h2>Lists</h2>
-          <p>
-            Lists are used to in websites to display various list options to users. They are also used in navigation websites to display the page navigation options. 
-          </p>
-          <h3>Examples</h3>
-          <h4>Usage</h4>
-          <h4>Spaced Lists</h4>
-          <p>Use the <span class="class-names">lst</span> classname to create a list element. 
-           Wrap the list items inside the container and use <span class="class-names">lst-container</span> classname for the container. You can also use the background and text colour classes to give colours to the list items.
-           In order to create spaced lists, use the <span class="class-names">spaced-lst</span> classname in the parent container.</p>
-          <div class="example-container">
-            <ul class="lst-container spaced-lst">
-                <li class="lst bg-secondary">Item 1</li>
-                <li class="lst bg-secondary">Item 2</li>
-                <li class="lst bg-secondary">Item 3</li>
-                <li class="lst bg-secondary">Item 4</li>
-                <li class="lst bg-secondary">Item 5</li>
-                <li class="lst bg-secondary">Item 6</li>
+    
+    <div class="container-doc">
+      
+      <!-- Header Section -->
+      <header>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
             </ul>
-          </div>
-          <div class="iframe-container">
-            <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cul%2520class%253D%2522lst-container%2520spaced-lst%2522%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25204%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25205%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25206%253C%252Fli%253E%250A%253C%252Ful%253E"
-                style="width: 437px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>  
-        </div>
+        </nav>
+      </header>
+
+      <!-- Side Navigation -->
+      <aside class="side-nav">
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="../Alert/alert.html">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item active-side-link"><a href="#">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Page Content  -->
+      <div class="container">
+        <!-- List -->
+        <main>
+            <!-- Spaced Lists -->
+            <div>
+              <h2>Lists</h2>
+              <p>
+                Lists are used to in websites to display various list options to users. They are also used in navigation websites to display the page navigation options. 
+              </p>
+              <h3>Examples</h3>
+              <p>The examples of spaced lists and stacked lists have been displayed here.</p>
+              <h4>Spaced Lists</h4>
+              <p>Use the <span class="class-names">lst</span> classname to create a list element. 
+              Wrap the list items inside the container and use <span class="class-names">lst-container</span> classname for the container. You can also use the background and text colour classes to give colours to the list items.
+              In order to create spaced lists, use the <span class="class-names">spaced-lst</span> classname in the parent container.</p>
+              <div class="example-container">
+                <ul class="lst-container spaced-lst">
+                    <li class="lst bg-secondary">Item 1</li>
+                    <li class="lst bg-secondary">Item 2</li>
+                    <li class="lst bg-secondary">Item 3</li>
+                    <li class="lst bg-secondary">Item 4</li>
+                    <li class="lst bg-secondary">Item 5</li>
+                    <li class="lst bg-secondary">Item 6</li>
+                </ul>
+              </div>
+              <div class="iframe-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cul%2520class%253D%2522lst-container%2520spaced-lst%2522%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25204%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25205%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2520bg-secondary%2522%253EItem%25206%253C%252Fli%253E%250A%253C%252Ful%253E"
+                    style="width: 437px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>  
+            </div>
 
 
-        <!-- Stacked Lists-->
-        <div>
-          <h4>Stacked Lists</h4>
-          <p>Use the <span class="class-names">stacked-lst</span> classname in the parent container to create stacked lists.</p>
-          <div class="example-container flex-centered">
-            <ul class="lst-container stacked-lst">
-                <li class="lst ">Item 1</li>
-                <li class="lst">Item 2</li>
-                <li class="lst">Item 3</li>
-                <li class="lst">Item 4</li>
-                <li class="lst">Item 5</li>
-                <li class="lst">Item 6</li>
-            </ul>
-          </div>
-          <div class="iframe-container">
-            <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cul%2520class%253D%2522lst-container%2520stacked-lst%2522%253E%250A%2509%253Cli%2520class%253D%2522lst%2520%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25204%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25205%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25206%253C%252Fli%253E%250A%253C%252Ful%253E"
-                style="width: 385px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
+            <!-- Stacked Lists-->
+            <div>
+              <h4>Stacked Lists</h4>
+              <p>Use the <span class="class-names">stacked-lst</span> classname in the parent container to create stacked lists.</p>
+              <div class="example-container flex-centered">
+                <ul class="lst-container stacked-lst">
+                    <li class="lst ">Item 1</li>
+                    <li class="lst">Item 2</li>
+                    <li class="lst">Item 3</li>
+                    <li class="lst">Item 4</li>
+                    <li class="lst">Item 5</li>
+                    <li class="lst">Item 6</li>
+                </ul>
+              </div>
+              <div class="iframe-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cul%2520class%253D%2522lst-container%2520stacked-lst%2522%253E%250A%2509%253Cli%2520class%253D%2522lst%2520%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25204%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25205%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522lst%2522%253EItem%25206%253C%252Fli%253E%250A%253C%252Ful%253E"
+                    style="width: 385px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
 
-        </div>
+            </div>
+         
+            <div class="both-pg page-nav">
+              <button class="prev-page-btn"><a href="../Input/input.html">Previous<br>Input</a></button>
+              <button class="next-page-btn"><a href="../Navigation/navigation.html">Next<br>Navigation</a></button>
+            </div>
+            <footer class="content-footer">
+              &copy; 2022 Shuttle UI, All Rights Reserved.
+            </footer>
+        </main>           
+      </div>
 
-
-      </main>
-    </div>
+    </div>    
   </body>
 </html>

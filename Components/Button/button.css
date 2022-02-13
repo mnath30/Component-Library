@@ -1,8 +1,6 @@
-@import url('../component.css');
 @import url('../theme.css');
-@import url('../../documentation/style.css');
+@import url('../../base/reset.css');
 @import url('../../base/utils.css');
-
 
 /* Button */
 .btn {
@@ -61,4 +59,13 @@
     display:flex;
     gap:0.8rem;
     align-items: center;
+}
+
+/* Floating button */
+.floating-btn {
+    border-radius: 50%;
+    font-size: 2rem;
+    height:4rem;
+    padding: 0.4rem;
+    width:4rem;  
 }

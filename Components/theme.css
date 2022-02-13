@@ -1,4 +1,18 @@
-@import url('component.css');
+/* Color variables */
+:root {
+    --primary:#63B3ED;
+    --secondary:#CBD5E0;
+    --success:#68D391;
+    --danger:#E53E3E;
+    --warning:#F6E05E;
+    --info:#81E6D9;
+    --black:#000000;
+    --white:#FFFFFF;
+    --light-grey:#E2E8F0;
+    --class-color:#6050dc;
+    --fb-header-color:#3B5998;
+    --amz-header-color:#FF9900;
+}
 
 /* text colors */
 .text-primary {

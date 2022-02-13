@@ -4,142 +4,188 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shuttle UI</title>
+    <title>Avatar - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css">
     <link rel="stylesheet" href="avatar.css" />
-    <link rel="icon" href="asset/img1.svg" />
+    <link rel="icon" href="../../asset/img1.svg" />
   </head>
   <body>
-    <div class="container">
-      <main>
 
-        <!-- Default Avatar  -->
-        <div>
-          <h2>Avatar</h2>
-          <p>
-            The Avatar component is used to display the profile picture or the
-            initials of a user. Badges can also be used with avatars to indicate the statuses of the users.
-          </p>
-          <h3>Examples</h3>
-          <h4>Usage</h4>
-          <p>Use the <span class="class-names">avatar</span> class to create an avatar. Just add the classname to the img tag.</p>
-          <div class="example-container flex-centered">
-            <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar2.jpg" alt="july doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar3.jpg" alt="jess doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar4.jpg" alt="jane doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar5.jpg" alt="jason doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar6.jpg" alt="jean doe" class="avatar"/>
-            <img src="../../asset/avatar/avatar7.jpg" alt="jill doe" class="avatar"/>
-          </div>
+      <div class="container-doc">
+          <!-- Header Section -->
+          <header>
+            <nav class="pg-navigation flex">
+                <div class="nav-brand flex">
+                    <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                    <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+                </div>
+                <ul class="pg-nav-items flex">
+                    <li class="cursor"><a href="../../index.html">Home</a></li>
+                    <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+                </ul>
+            </nav>
+          </header>
+    
+          <!-- Side Navigation -->
+          <aside class="side-nav">
+            <ul class="nav-items">
+              <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+              <li class="side-nav-item"><a href="../Alert/alert.html">Alert</a></li>
+              <li class="side-nav-item active-side-link"><a href="#">Avatar</a></li>
+              <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+              <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+              <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+              <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+              <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+              <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+              <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+              <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+            </ul>
+          </aside>
+    
+          <!-- Main Page Content  -->
+          <div class="container">
+              <!-- Avatar -->
+              <main>
+                <!-- Default Avatar  -->
+                <div>
+                  <h2>Avatar</h2>
+                  <p>
+                    The Avatar component is used to display the profile picture or the
+                    initials of a user. Badges can also be used with avatars to indicate the statuses of the users.
+                  </p>
+                  <h3>Examples</h3>
+                  <p>The examples of default avatars, different avatar sizes, default avatars with icons, avatars with initials and avatars with badge have been provided here. </p>
+                  <h4>Default Avatar</h4>
+                  <p>Use the <span class="class-names">avatar</span> class to create an avatar. Just add the classname to the img tag.</p>
+                  <div class="example-container flex-centered">
+                    <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar2.jpg" alt="july doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar3.jpg" alt="jess doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar4.jpg" alt="jane doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar5.jpg" alt="jason doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar6.jpg" alt="jean doe" class="avatar"/>
+                    <img src="../../asset/avatar/avatar7.jpg" alt="jill doe" class="avatar"/>
+                  </div>
 
-          <div class="iframe-container">
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522july%2520doe%2522%2520class%253D%2522avatar%2522%252F%253E"
-            style="width: 689px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-          
-        </div>
-
-
-        <!-- Avatars of different sizes -->
-        <div>
-          <h4>Avatar Sizes</h4>
-          <p>You can create avatars of different sizes by just adding the size class along with <span class="class-names">avatar</span> class. We have 6 sizes of avatars available <span class="class-names">xxl</span> for extra large avatars, <span class="class-names">xl</span> for larger avatars, <span class="class-names">lg</span> for large avatars, <span class="class-names">md</span> for medium avatars, <span class="class-names">sm</span> for small avatars, <span class="class-names">xs</span> for extra small avatars.</p>
-          <div class="example-container flex-centered">
-            <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar xxl"/>
-            <img src="../../asset/avatar/avatar2.jpg" alt="july doe" class="avatar xl"/>
-            <img src="../../asset/avatar/avatar3.jpg" alt="jess doe" class="avatar lg"/>
-            <img src="../../asset/avatar/avatar4.jpg" alt="jane doe" class="avatar md"/>
-            <img src="../../asset/avatar/avatar5.jpg" alt="jason doe" class="avatar sm"/>
-            <img src="../../asset/avatar/avatar6.jpg" alt="jean doe" class="avatar xs"/>
-          </div>
-
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520xxl%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522july%2520doe%2522%2520class%253D%2522avatar%2520xl%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar3.jpg%2522%2520alt%253D%2522jess%2520doe%2522%2520class%253D%2522avatar%2520lg%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar4.jpg%2522%2520alt%253D%2522jane%2520doe%2522%2520class%253D%2522avatar%2520md%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar5.jpg%2522%2520alt%253D%2522jason%2520doe%2522%2520class%253D%2522avatar%2520sm%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar6.jpg%2522%2520alt%253D%2522jean%2520doe%2522%2520class%253D%2522avatar%2520xs%2522%252F%253E"
-              style="width: 723px; height: 220px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-
-        </div>
-
-
-        <!-- Avatars with default icons -->
-        <div>
-          <h4>Default Avatars</h4>
-          <p>You can also create default avatars with icons by adding the <span class="class-names">avatar-default</span> class for default avatar icon, <span class="class-names">avatar-male</span> for default male icon or <span class="class-names">avatar-female</span> class for default female icon along with <span class="class-names">avatar</span> class.
-          Use the <span class="class-names">border</span> class to add borders to your avatars.
-          </p>
-          <div class="example-container flex-centered">
-            <div class="avatar avatar-default border"></div>
-            <div class="avatar avatar-male border"></div>
-            <div class="avatar avatar-female border"></div>
-          </div>
-
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-default%2520border%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-male%2520border%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-female%2520border%2522%253E%253C%252Fdiv%253E"
-              style="width: 472px; height: 180px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-
-        </div>
+                  <div class="iframe-container">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522july%2520doe%2522%2520class%253D%2522avatar%2522%252F%253E"
+                    style="width: 689px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+                  
+                </div>
 
 
-        <!-- Avatars with Name Initials -->
-        <div>
-          <h4>Avatars with Initials</h4>
-          <p>Instead of avatar with images, you can also create avatars with initials by adding the <span class="class-names">avatar-initials</span> class. You can also add background colors to your avatars by using the background-color property.</p>
-          <div class="example-container flex-centered">
-            <div class="avatar avatar-initials border">MN</div>
-            <div class="avatar avatar-initials border">AG</div>
-            <div class="avatar avatar-initials border">PT</div>
-          </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-initials%2520border%2522%253EMN%253C%252Fdiv%253E"
-              style="width: 498px; height: 127px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
+                <!-- Avatars of different sizes -->
+                <div>
+                  <h4>Avatar Sizes</h4>
+                  <p>You can create avatars of different sizes by just adding the size class along with <span class="class-names">avatar</span> class. We have 6 sizes of avatars available <span class="class-names">avatar-xxl</span> for extra large avatars, <span class="class-names">avatar-xl</span> for larger avatars, <span class="class-names">avatar-lg</span> for large avatars, <span class="class-names">avatar-md</span> for medium avatars, <span class="class-names">avatar-sm</span> for small avatars, <span class="class-names">avatar-xs</span> for extra small avatars.</p>
+                  <div class="example-container flex-centered">
+                    <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar avatar-xxl"/>
+                    <img src="../../asset/avatar/avatar2.jpg" alt="july doe" class="avatar avatar-xl"/>
+                    <img src="../../asset/avatar/avatar3.jpg" alt="jess doe" class="avatar avatar-lg"/>
+                    <img src="../../asset/avatar/avatar4.jpg" alt="jane doe" class="avatar avatar-md"/>
+                    <img src="../../asset/avatar/avatar5.jpg" alt="jason doe" class="avatar avatar-sm"/>
+                    <img src="../../asset/avatar/avatar6.jpg" alt="jean doe" class="avatar avatar-xs"/>
+                  </div>
+
+                  <div class="iframe-container">
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520avatar-xxl%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522july%2520doe%2522%2520class%253D%2522avatar%2520avatar-xl%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar3.jpg%2522%2520alt%253D%2522jess%2520doe%2522%2520class%253D%2522avatar%2520avatar-lg%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar4.jpg%2522%2520alt%253D%2522jane%2520doe%2522%2520class%253D%2522avatar%2520avatar-md%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar5.jpg%2522%2520alt%253D%2522jason%2520doe%2522%2520class%253D%2522avatar%2520avatar-sm%2522%252F%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar6.jpg%2522%2520alt%253D%2522jean%2520doe%2522%2520class%253D%2522avatar%2520avatar-xs%2522%252F%253E"
+                      style="width: 783px; height: 219px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+
+                </div>
 
 
-        <!--Avatars with Badges  -->
-        <div>
-          <h4>Avatar with Badge</h4>
-          <p>Avatars with badges can be used to indicate the status of the avatar. Add the <span class="class-names">avatar</span> and the <span class="class-names">block</span> class to create your avatar. Inside the avatar, add the <span class="class-names">avatar-circle</span> class to create your status badge. We have four different status badges available and you can include the status classes along with the <span class="class-names">avatar-circle</span> class to denote the various avatar statuses. Use <span class="class-names">busy</span> class to denote the busy status badge, <span class="class-names">online</span> class to denote the online status badge, <span class="class-names">away</span> class to denote the away status badge and <span class="class-names">offline</span> class to denote the offline status badge.</p>
-          <div class="example-container flex-centered">
-            <div class="avatar-badge">
-              <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar block"/>
-              <div class="avatar-circle busy border"></div>
+                <!-- Avatars with default icons -->
+                <div>
+                  <h4>Default Avatars with icons</h4>
+                  <p>You can also create default avatars with icons by adding the <span class="class-names">avatar-default</span> class for default avatar icon, <span class="class-names">avatar-male</span> for default male icon or <span class="class-names">avatar-female</span> class for default female icon along with <span class="class-names">avatar</span> class.
+                  Use the <span class="class-names">avatar-border</span> class to add borders to your avatars.
+                  </p>
+                  <div class="example-container flex-centered">
+                    <div class="avatar avatar-default avatar-border"></div>
+                    <div class="avatar avatar-male avatar-border"></div>
+                    <div class="avatar avatar-female avatar-border"></div>
+                  </div>
+
+                  <div class="iframe-container">
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-default%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-male%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-female%2520avatar-border%2522%253E%253C%252Fdiv%253E"
+                      style="width: 531px; height: 163px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+
+                </div>
+
+
+                <!-- Avatars with Name Initials -->
+                <div>
+                  <h4>Avatars with Initials</h4>
+                  <p>Instead of avatar with images, you can also create avatars with initials by adding the <span class="class-names">avatar-initials</span> class. You can also add background colors to your avatars by using the background-color property.</p>
+                  <div class="example-container flex-centered">
+                    <div class="avatar avatar-initials avatar-border">MN</div>
+                    <div class="avatar avatar-initials avatar-border">AG</div>
+                    <div class="avatar avatar-initials avatar-border">PT</div>
+                  </div>
+                  <div class="iframe-container">
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-initials%2520avatar-border%2522%253EMN%253C%252Fdiv%253E"
+                      style="width: 558px; height: 126px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+                </div>
+
+
+                <!--Avatars with Badges  -->
+                <div>
+                  <h4>Avatar with Badge</h4>
+                  <p>Avatars with badges can be used to indicate the status of the avatar. Add the <span class="class-names">avatar</span> and the <span class="class-names">block</span> class to create your avatar. Inside the avatar, add the <span class="class-names">avatar-circle</span> class to create your status badge. We have four different status badges available and you can include the status classes along with the <span class="class-names">avatar-circle</span> class to denote the various avatar statuses. Use <span class="class-names">busy</span> class to denote the busy status badge, <span class="class-names">online</span> class to denote the online status badge, <span class="class-names">away</span> class to denote the away status badge and <span class="class-names">offline</span> class to denote the offline status badge.</p>
+                  <div class="example-container flex-centered">
+                    <div class="avatar-badge">
+                      <img src="../../asset/avatar/avatar1.jpg" alt="john doe" class="avatar block"/>
+                      <div class="avatar-circle busy avatar-border"></div>
+                    </div>
+                    <div class="avatar-badge">
+                      <img src="../../asset/avatar/avatar2.jpg" alt="jane doe" class="avatar block"/>
+                      <div class="avatar-circle online avatar-border"></div>
+                    </div>
+                    <div class="avatar-badge">
+                      <img src="../../asset/avatar/avatar4.jpg" alt="jason doe" class="avatar block"/>
+                      <div class="avatar-circle away avatar-border"></div>
+                    </div>
+                    <div class="avatar-badge">
+                      <img src="../../asset/avatar/avatar5.jpg" alt="jean doe" class="avatar block"/>
+                      <div class="avatar-circle offline avatar-border">x</div>
+                    </div>
+                  </div>
+                  <div class="iframe-container">
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520busy%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522jane%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520online%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar4.jpg%2522%2520alt%253D%2522jason%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520away%2520avatar-border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar5.jpg%2522%2520alt%253D%2522jean%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520offline%2520avatar-border%2522%253Ex%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                      style="width: 783px; height: 405px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+                </div>
+                <div class="both-pg page-nav">
+                  <button class="prev-page-btn"><a href="../Alert/alert.html">Previous<br>Alert</a></button>
+                  <button class="next-page-btn"><a href="../Badge/badge.html">Next<br>Badge</a></button>
+                </div>
+                <footer class="content-footer">
+                  &copy; 2022 Shuttle UI, All Rights Reserved.
+                </footer>
+              </main>
             </div>
-            <div class="avatar-badge">
-              <img src="../../asset/avatar/avatar2.jpg" alt="jane doe" class="avatar block"/>
-              <div class="avatar-circle online border"></div>
-            </div>
-            <div class="avatar-badge">
-              <img src="../../asset/avatar/avatar4.jpg" alt="jason doe" class="avatar block"/>
-              <div class="avatar-circle away border"></div>
-            </div>
-            <div class="avatar-badge">
-              <img src="../../asset/avatar/avatar5.jpg" alt="jean doe" class="avatar block"/>
-              <div class="avatar-circle offline border">x</div>
-            </div>
           </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar1.jpg%2522%2520alt%253D%2522john%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520busy%2520border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar2.jpg%2522%2520alt%253D%2522jane%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520online%2520border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar4.jpg%2522%2520alt%253D%2522jason%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520away%2520border%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252F..%252Fasset%252Favatar%252Favatar5.jpg%2522%2520alt%253D%2522jean%2520doe%2522%2520class%253D%2522avatar%2520block%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522avatar-circle%2520offline%2520border%2522%253Ex%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="width: 784px; height: 406px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+            
   </body>
 </html>
