@@ -12,6 +12,10 @@
     --class-color:#6050dc;
     --fb-header-color:#3B5998;
     --amz-header-color:#FF9900;
+    --card-background:#FAF1F1;
+    --card-btn-hover:#cbd5e099;
+    --light-pink:#E97396;
+    --overlay-color:#cbd5e099;
 }
 
 /* text colors */
@@ -71,10 +75,11 @@
 }
 .bg-card-btn {
     background-color: var(--class-color);
-.bg-fb-blue{
+}    
+.bg-fb-blue {
     background-color: var(--fb-header-color);
 }
-.bg-amz-orange{
+.bg-amz-orange {
     background-color: var(--amz-header-color);
 }
 

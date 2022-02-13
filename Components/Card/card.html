@@ -4,241 +4,286 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards-Shuttle UI</title>
-    <link rel="stylesheet" href="../../documentation/style.css">
+    <title>Cards - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css"/>
     <link rel="stylesheet" href="card.css" />
     <link rel="icon" href="../../asset/img1.svg" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <div class="container">
-      <main>
 
-        <!-- Default Vertical Card -->
-        <div>
-          <h2>Cards</h2>
-          <p>
-            The Card components are used to display various elements on the webpage. They are used to display the products on e-commerce websites. Only text cards can also be created without the images. Cards can also have buttons and icons along with texts and image.
-          </p>
-          <h3>Examples</h3>
-          <h4>Default Vertical Cards</h4>
-          <p>Use the <span class="class-names">card</span> classname to create a card. Add the <span class="class-names">card-vert</span> classname to create a vertical card. Add the <span class="class-names">card-img</span> classname to the parent element of the image inside the card container and add the <span class="class-names">responsive-img</span> classname to the image.
-          Use the <span class="class-names">card-body</span> classname in the parent container inside card and then add the heading of the card with <span class="class-names">card-header</span> classname, content of the card with <span class="class-names">card-para</span> classname and the buttons using <span class="class-names">card-buttons</span> classname inside the card body.
-          </p>
-          <div class="example-container flex-centered">
-            <div class="card card-vert">
-              <div class="card-img">
-                <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
-              </div>
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-buttons">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+    <div class="container-doc">
+      <!-- Header Section -->
+      <header>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <!-- Side Navigation -->
+      <aside class="side-nav">
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="#">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item active-side-link"><a href="#">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+      </ul>
+      </aside>
+
+
+      <!-- Main Page Content  --> 
+      <div class="container">
+        <!-- Card -->
+        <main>
+          <!-- Default Card -->
+          <div>
+            <h2>Cards</h2>
+            <p>
+              The Card components are used to display various elements on the webpage. They are used to display the products on e-commerce websites. Only text cards can also be created without the images. Cards can also have buttons and icons along with texts and image.
+            </p>
+            <h3>Examples</h3>
+            <p>The examples of default vertical card, card with badges, card with dismiss, card with text overlay, text only card, horizontal card and card with shadow have been provided. </p>
+            <h4>Default Vertical Cards</h4>
+            <p>Use the <span class="class-names">card</span> classname to create a card. Add the <span class="class-names">card-vert</span> classname to create a vertical card. Add the <span class="class-names">card-img</span> classname to the parent element of the image inside the card container and add the <span class="class-names">responsive-img</span> classname to the image.
+            Use the <span class="class-names">card-body</span> classname in the parent container inside card and then add the heading of the card with <span class="class-names">card-header</span> classname, content of the card with <span class="class-names">card-para</span> classname and the buttons using <span class="class-names">card-buttons</span> classname inside the card body.
+            </p>
+            <div class="example-container flex-centered">
+              <div class="card card-vert">
+                <div class="card-img">
+                  <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
                 </div>
-              </div>
-            </div>  
-          </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
-              style="width: 887px; height: 366px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>  
-        </div>
-
-
-        <!-- Card with Badges -->
-        <div>
-          <h4>Cards with Badges</h4>
-          <p>To add the badges to your card, include the <span class="class-names">card-header-with-badge</span> classname to the parent container and then use the <span class="class-names">card-badge</span> classname on the badges. Position the badges on your card using the <span class="class-names">card-top-left-badge</span> classname for top-left position, <span class="class-names">card-top-right-badge</span> classname for top-right position, <span class="class-names">card-bottom-left-badge</span> classname for bottom-left position.</p>
-          <div class="example-container flex-centered">
-            <div class="card card-vert">
-              <div class="card-img card-header-with-badge">
-                <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
-                <span class="card-badge card-top-left-badge">New</span>
-                <span class="card-badge card-bottom-left-badge">4.3 <i class="fas fa-star text-danger"></i></span>
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-buttons">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
+                </div>
               </div>  
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-buttons">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
-                </div>
-              </div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
+                style="width: 887px; height: 366px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
             </div>  
           </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-left-badge%2522%253ENew%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.3%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="width: 903px; height: 386px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+
+
+          <!-- Card with Badges -->
+          <div>
+            <h4>Cards with Badges</h4>
+            <p>To add the badges to your card, include the <span class="class-names">card-header-with-badge</span> classname to the parent container and then use the <span class="class-names">card-badge</span> classname on the badges. Position the badges on your card using the <span class="class-names">card-top-left-badge</span> classname for top-left position, <span class="class-names">card-top-right-badge</span> classname for top-right position, <span class="class-names">card-bottom-left-badge</span> classname for bottom-left position.</p>
+            <div class="example-container flex-centered">
+              <div class="card card-vert">
+                <div class="card-img card-header-with-badge">
+                  <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
+                  <span class="card-badge card-top-left-badge">New</span>
+                  <span class="card-badge card-bottom-left-badge">4.3 <i class="fas fa-star text-danger"></i></span>
+                </div>  
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-buttons">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-left-badge%2522%253ENew%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.3%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 903px; height: 386px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
           </div>
-        </div>
 
 
-        <!-- Card with Dismiss -->
-        <div>
-          <h4>Cards with dismiss</h4>
-          <p>To add the dismiss button to the card, use the respective icon and add the position to the icon using <span class="class-names">card-top-right-badge</span> classname along with <span class="class-names">card-badge</span> classname inside the container having <span class="class-names">card-header-with-badge</span> classname.
-          </p>
-          <div class="example-container flex-centered">
-            <div class="card card-vert">
-              <div class="card-img card-header-with-badge">
-                <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
-                <span class="card-badge card-top-right-badge"><i class="fas fa-times"></i></span>
-                <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+          <!-- Card with Dismiss -->
+          <div>
+            <h4>Cards with dismiss</h4>
+            <p>To add the dismiss button to the card, use the respective icon and add the position to the icon using <span class="class-names">card-top-right-badge</span> classname along with <span class="class-names">card-badge</span> classname inside the container having <span class="class-names">card-header-with-badge</span> classname.
+            </p>
+            <div class="example-container flex-centered">
+              <div class="card card-vert">
+                <div class="card-img card-header-with-badge">
+                  <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
+                  <span class="card-badge card-top-right-badge"><i class="fas fa-times"></i></span>
+                  <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                </div> 
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-buttons">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-right-badge%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.1%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
+                style="width: 991px; height: 403px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Card with text overlay  -->
+          <div>
+            <h4>Cards with text overlay</h4>
+            <p>To create cards with text overlay, add the <span class="class-names">overlay-text</span> classname to the text and include it inside a container with <span class="class-names">card-overlay</span> classname. Add the <span class="class-names">card-with-overlay</span> classname to the card container to which the text overlay is to be applied.</p>
+            <div class="example-container flex-centered">  
+              <div class="card card-vert card-with-overlay">
+                <div class="card-overlay">
+                  <p class="overlay-text">Out Of Stock</p>
+                </div>
+                <div class="card-img card-header-with-badge">
+                  <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
+                  <span class="card-badge card-top-left-badge">New</span>
+                  <span class="card-badge card-bottom-left-badge">4.3 <i class="fas fa-star text-danger"></i></span>
+                </div>  
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-buttons">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
+                </div>
               </div> 
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-buttons">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2520card-with-overlay%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-overlay%2522%253E%250A%2509%2509%253Cp%2520class%253D%2522overlay-text%2522%253EOut%2520Of%2520Stock%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-left-badge%2522%253ENew%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.3%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
+                style="width: 974px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Text only cards -->
+          <div>
+            <h4>Text only cards</h4>
+            <p>To create text only cards, just add the <span class="class-names">card-body</span> classname to the card component and include the respective card headers and card content inside the card body.</p>
+            <div class="example-container flex-centered">  
+              <div class="card card-vert">
+                <div class="card-body">  
+                  <h4 class="card-header card-header-with-badge">Card Title
+                    <span class="card-badge text-only-badge card-top-right-badge"><i class="fas fa-times"></i></span>
+                  </h4>
+                  <p class="card-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nam sunt qui iure alias necessitatibus earum ducimus temporibus quos? Consectetur eos doloremque itaque corporis inventore aut suscipit reiciendis ullam vitae!</p>
+                  <div class="card-buttons">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
                 </div>
-              </div>
-            </div>  
+              </div> 
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%2520%2520%250A%2509%2509%253Ch4%2520class%253D%2522card-header%2520card-header-with-badge%2522%253ECard%2520Title%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520text-only-badge%2520card-top-right-badge%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%253C%252Fh4%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Nesciunt%2520nam%2520sunt%2520qui%2520%2509%2509%2520%2520iure%2520alias%2520necessitatibus%2520earum%2520ducimus%2520temporibus%2520quos%253F%2520Consectetur%2520eos%2520doloremque%2520itaque%2520corporis%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520inventore%2520aut%2520suscipit%2520reiciendis%2520ullam%2520vitae%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
+                style="width: 1024px; height: 368px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
           </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-right-badge%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.1%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
-              style="width: 991px; height: 403px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
 
 
-        <!-- Card with text overlay  -->
-        <div>
-          <h4>Cards with text overlay</h4>
-          <p>To create cards with text overlay, add the <span class="class-names">overlay-text</span> classname to the text and include it inside a container with <span class="class-names">card-overlay</span> classname. Add the <span class="class-names">card-with-overlay</span> classname to the card container to which the text overlay is to be applied.</p>
-          <div class="example-container flex-centered">  
-            <div class="card card-vert card-with-overlay">
-              <div class="card-overlay">
-                <p class="overlay-text">Out Of Stock</p>
-              </div>
-              <div class="card-img card-header-with-badge">
-                <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
-                <span class="card-badge card-top-left-badge">New</span>
-                <span class="card-badge card-bottom-left-badge">4.3 <i class="fas fa-star text-danger"></i></span>
+          <!-- Horizontal Cards -->
+          <div>
+            <h4>Horizontal cards</h4>
+            <p>To make horizontal cards, add the <span class="class-names">card-horiz</span> classname to the card container. Use the <span class="class-names">card-img-horiz</span> classname to the image container. For the buttons, add the <span class="class-names">card-horiz-button</span> classname to the button container.</p>
+            <div class="example-container flex-centered">
+              <div class="card card-horiz">
+                <div class="card-img-horiz">
+                  <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-horiz-btn">
+                    <button class="btn-card bg-secondary">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                  </div>
+                </div>
               </div>  
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-buttons">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horiz%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img-horiz%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-horiz-btn%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
+                style="width: 887px; height: 366px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
+
+          <!-- Cards with shadow -->
+          <div>
+            <h4>Cards with shadow</h4>
+            <p>To add a shadow effect to the card, use the <span class="class-names">card-box-shadow</span> classname on the card.</p>
+            <div class="example-container flex-centered">
+              <div class="card card-horiz card-box-shadow">
+                <div class="card-img-horiz">
+                  <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
                 </div>
-              </div>
-            </div> 
-          </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2520card-with-overlay%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-overlay%2522%253E%250A%2509%2509%253Cp%2520class%253D%2522overlay-text%2522%253EOut%2520Of%2520Stock%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520card-header-with-badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-top-left-badge%2522%253ENew%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520card-bottom-left-badge%2522%253E4.3%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520text-danger%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
-              style="width: 974px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
-
-
-        <!-- Text only cards -->
-        <div>
-          <h4>Text only cards</h4>
-          <p>To create text only cards, just add the <span class="class-names">card-body</span> classname to the card component and include the respective card headers and card content inside the card body.</p>
-          <div class="example-container flex-centered">  
-            <div class="card card-vert">
-              <div class="card-body">  
-                <h4 class="card-header card-header-with-badge">Card Title
-                  <span class="card-badge text-only-badge card-top-right-badge"><i class="fas fa-times"></i></span>
-                </h4>
-                <p class="card-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nam sunt qui iure alias necessitatibus earum ducimus temporibus quos? Consectetur eos doloremque itaque corporis inventore aut suscipit reiciendis ullam vitae!</p>
-                <div class="card-buttons">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
+                <div class="card-body">
+                  <h5 class="card-header">Marks & Aria</h5>
+                  <p class="card-para">Printed Tee
+                  <br>Rs. 1500</p>
+                  <div class="card-horiz-btn">
+                    <button class="btn-card bg-secondary btn-block">Add to Cart</button>
+                    <button class="btn-card border-secondary btn-card-second btn-block">Add to Wishlist</button>
+                  </div>
                 </div>
-              </div>
-            </div> 
+              </div>  
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horiz%2520card-box-shadow%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img-horiz%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-horiz-btn%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2520btn-block%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2520btn-block%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
+                style="width: 957px; height: 349px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
           </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-vert%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%2520%2520%250A%2509%2509%253Ch4%2520class%253D%2522card-header%2520card-header-with-badge%2522%253ECard%2520Title%250A%2509%2509%253Cspan%2520class%253D%2522card-badge%2520text-only-badge%2520card-top-right-badge%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%253C%252Fh4%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Nesciunt%2520nam%2520sunt%2520qui%2520%2509%2509%2520%2520iure%2520alias%2520necessitatibus%2520earum%2520ducimus%2520temporibus%2520quos%253F%2520Consectetur%2520eos%2520doloremque%2520itaque%2520corporis%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520inventore%2520aut%2520suscipit%2520reiciendis%2520ullam%2520vitae%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
-              style="width: 1024px; height: 368px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+          <div class="both-pg page-nav">
+            <button class="prev-page-btn"><a href="../Button/button.html">Previous<br>Button</a></button>
+            <button class="next-page-btn"><a href="../Image/responsive-image.html">Next<br>Image</a></button>
           </div>
-        </div>
+          <footer class="content-footer">
+            &copy; 2022 Shuttle UI, All Rights Reserved.
+          </footer>
 
-
-        <!-- Horizontal Cards -->
-        <div>
-          <h4>Horizontal cards</h4>
-          <p>To make horizontal cards, add the <span class="class-names">card-horiz</span> classname to the card container. Use the <span class="class-names">card-img-horiz</span> classname to the image container. For the buttons, add the <span class="class-names">card-horiz-button</span> classname to the button container.</p>
-          <div class="example-container flex-centered">
-            <div class="card card-horiz">
-              <div class="card-img-horiz">
-                <img class="responsive-img" src="../../asset/card/card-img1.jpg" alt="image-of-a-man">
-              </div>
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-horiz-btn">
-                  <button class="btn-card bg-secondary">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second">Add to Wishlist</button>
-                </div>
-              </div>
-            </div>  
-          </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horiz%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img-horiz%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img1.jpg%2522%2520alt%253D%2522image-of-a-man%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-horiz-btn%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
-              style="width: 887px; height: 366px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
-
-
-        <!-- Cards with shadow -->
-        <div>
-          <h4>Cards with shadow</h4>
-          <p>To add a shadow effect to the card, use the <span class="class-names">card-box-shadow</span> classname on the card.</p>
-          <div class="example-container flex-centered">
-            <div class="card card-horiz card-box-shadow">
-              <div class="card-img-horiz">
-                <img class="responsive-img" src="../../asset/card/card-img2.jpg" alt="image-of-a-woman">
-              </div>
-              <div class="card-body">
-                <h5 class="card-header">Marks & Aria</h5>
-                <p class="card-para">Printed Tee
-                <br>Rs. 1500</p>
-                <div class="card-horiz-btn">
-                  <button class="btn-card bg-secondary btn-block">Add to Cart</button>
-                  <button class="btn-card border-secondary btn-card-second btn-block">Add to Wishlist</button>
-                </div>
-              </div>
-            </div>  
-          </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horiz%2520card-box-shadow%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img-horiz%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fasset%252Fcard%252Fcard-img2.jpg%2522%2520alt%253D%2522image-of-a-woman%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-header%2522%253EMarks%2520%2526%2520Aria%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-para%2522%253EPrinted%2520Tee%2520%253Cbr%253ERs.%25201500%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-horiz-btn%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520bg-secondary%2520btn-block%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn-card%2520border-secondary%2520btn-card-second%2520btn-block%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
-              style="width: 957px; height: 349px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-        </div>
-
-      </main>
+        </main>
+      </div>
     </div>
+  
   </body>
 </html>
