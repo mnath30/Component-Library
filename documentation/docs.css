@@ -1,6 +1,6 @@
 @import url('../base/utils.css');
 @import url('../base/reset.css');
-
+/* Colours for documentation page */
 :root {
     --black:#000000;
     --dark-purple:#4C3FAF;
@@ -73,12 +73,12 @@ header .pg-nav-title, header .pg-nav-items li {
 }
 
 /* Side navigation */
-.side-nav {
-    padding:0.2rem 0.2rem;
+.side-nav { 
     font-size: 1.2rem;
     grid-area: aside;
     margin: 0.8rem 0.2rem;
     overflow-y:scroll;
+    padding:0.2rem 0.2rem;
 }   
 .nav-items {
     box-shadow: 4px 0px 8px -2px var(--primary-color);
@@ -95,9 +95,9 @@ header .pg-nav-title, header .pg-nav-items li {
     border-radius: 8px;
 }
 .side-nav-item a {
+    color: var(--dark-purple);
     display: block;
     padding:0.8rem;
-    color: var(--dark-purple);
 }
 
 /* Class Names Style inside documentation*/
@@ -135,13 +135,13 @@ iframe {
     max-width:100%;
 }
 
-/* Next page navigation section */
+/* Next and previous page navigation section */
 .page-nav {
-    padding:0 2rem 0.8rem 0;
     font-size: 1.1rem;
+    padding:0 2rem 0.8rem 0;
 }
 .only-next-pg {
-  text-align: right;
+    text-align: right;
 }
 .only-prev-pg {
     text-align: left;
@@ -155,9 +155,9 @@ iframe {
     padding: 0.2rem 1.6rem;
 }
 .next-page-btn:hover ,.prev-page-btn:hover {
-    cursor: pointer;
     border: 1px solid var(--dark-purple);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 /* Footer  */

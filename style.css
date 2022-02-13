@@ -1,5 +1,7 @@
 @import url('base/reset.css');
 @import url('base/utils.css');
+
+/* Colours for landing page */
 :root {
     --black:#000000;
     --dark-purple:#4C3FAF;
@@ -19,7 +21,6 @@
     "footer footer";
     height: 100vh;
 }
-
 
 /* Header */
 header {
