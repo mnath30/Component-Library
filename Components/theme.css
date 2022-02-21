@@ -16,6 +16,8 @@
     --card-btn-hover:#cbd5e099;
     --light-pink:#E97396;
     --overlay-color:#cbd5e099;
+    --tinted-grey:#EEEEEE;
+    --darker-grey:#56585A;
 }
 
 /* text colors */
@@ -40,7 +42,9 @@
 .text-dark {
     color:var(--black);
 }
-
+.text-dark-grey {
+    color: var(--darker-grey);
+}
 .text-light {
     color:var(--white);
 }
@@ -81,6 +85,12 @@
 }
 .bg-amz-orange {
     background-color: var(--amz-header-color);
+}
+.bg-light-grey {
+    background-color: var(--tinted-grey);
+}
+.bg-white {
+    background-color: var(--white);
 }
 
 /* border colors */
