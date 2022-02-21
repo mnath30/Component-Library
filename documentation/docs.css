@@ -8,7 +8,8 @@
     --primary-color:#9381ff66;
     --secondary-color:#6050dc;
     --white:#FFFFFF;  
-    --grey-border:#C4C1C7;   
+    --grey-border:#C4C1C7; 
+    --lighter-grey-shade:#e9e9e9;  
 }
 
 
@@ -169,6 +170,22 @@ iframe {
     padding:0.8rem;
     text-align: center;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--lighter-grey-shade); 
+    border-radius: 8px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 8px;
+  }
+  
 
 /* Media Queries */
 @media only screen and (max-width:770px) {

@@ -9,6 +9,9 @@
 @import url('Navigation/navigation.css');
 @import url('TextUtilities/textUtilities.css');
 @import url('Grid/grid.css');
+@import url('Modal/modal.css');
+@import url('Toast/toast.css');
+@import url('Rating/rating.css');
 
 
 
