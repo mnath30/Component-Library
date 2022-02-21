@@ -97,6 +97,21 @@
        1. 3 column grid
        2. 2 column grid
 
+ 12. [Modal](https://shuttle-ui.netlify.app/components/modal/modal)
+
+       1. Default Modal
+
+ 13. [Toast](https://shuttle-ui.netlify.app/components/toast/toast)
+
+       1. Default toast
+       2. Translucent toast
+       3. Toast placement
+
+ 14. [Rating](https://shuttle-ui.netlify.app/components/rating/rating)
+
+       1. Star rating
+       2. Radio button rating
+
 
 You can checkout the documentation at [Shuttle-UI](https://shuttle-ui.netlify.app/documentation/doc.html)
 
