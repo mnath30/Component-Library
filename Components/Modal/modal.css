@@ -1,0 +1,36 @@
+@import url('../theme.css');
+@import url('../../base/reset.css');
+@import url('../../base/utils.css');
+
+.modal {
+    border-radius:8px;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 25rem;
+}
+.modal-header {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    padding: 0.8rem 0.8rem 0 0.8rem;
+}
+.modal-body,
+.modal-dismiss,
+.modal-footer {
+    padding: 0.8rem;
+}
+.modal-dismiss {
+    margin-left: auto;
+    cursor: pointer;
+}
+.modal-body {
+    text-align: left;
+}
+.modal-footer {
+    text-align: right;
+}
+.modal-btn {
+    padding:0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}

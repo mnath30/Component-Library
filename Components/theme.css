@@ -92,6 +92,9 @@
 .bg-white {
     background-color: var(--white);
 }
+.bg-transparent {
+    background-color: transparent;
+}
 
 /* border colors */
 .border-primary {
