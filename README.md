@@ -1,6 +1,6 @@
 # Shuttle - UI
 
- Shuttle UI is a Component Library
+ A powerful front-end framework for developing beautiful websites faster.
  
  ----
  
