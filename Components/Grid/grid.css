@@ -1,0 +1,24 @@
+@import url('../theme.css');
+@import url('../../base/reset.css');
+@import url('../../base/utils.css');
+
+.grid {
+    display: grid;
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-col-1 {
+    grid-template-columns: 1fr;
+}
+
+/* Grid items */
+.item-1,.item-2, .item-3,.item-4,.item-5,.item-6 {
+    height:8rem;
+}

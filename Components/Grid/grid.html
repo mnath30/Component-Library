@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css"/>
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="icon" href="../../asset/img1.svg" />
+  </head>
+  <body>
+
+    <div class="container-doc">
+      <!-- Header Section -->
+      <header>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <!-- Side Navigation -->
+      <aside class="side-nav">
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="#">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Grids</a></li>
+      </ul>
+      </aside>
+
+      <!-- Main Page Content  --> 
+      <div class="container">
+        <!-- Grid -->
+        <main>
+          <!-- Default Grid -->
+          <div>
+            <h2>Grid</h2>
+            <p>
+            Grids are used to section the pages. By using grids you can easily position the various elements in the pages.
+            </p>
+            <h3>Examples</h3>
+            <p>The examples of grid with 3 columns and grid with 2 columns are provided.</p>
+            <h4>Default Grid</h4>
+            <p>Use the <span class="class-names">grid</span> classname to create the grid layout. Just add the classname to create the grid layout and then add the respective column class names to create grid layouts of different columns.
+            Use the <span class="class-names">grid-col-3</span> classname to create a 3 column grid layout</p>
+            <div class="example-container">
+              <div class="grid grid-col-3">
+                <div class="item-1 bg-danger">Item 1</div>
+                <div class="item-2 bg-warning">Item 2</div>
+                <div class="item-3 bg-success">Item 3</div>
+                <div class="item-4 bg-info">Item 4</div>
+                <div class="item-5 bg-danger">Item 5</div>
+                <div class="item-6 bg-secondary">Item 6</div>
+              </div>
+            </div>
+            <div class="iframe-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-3%2522%253E%250A%2509%253Cdiv%2520class%253D%2522item-1%2520bg-danger%2522%253EItem%25201%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-2%2520bg-warning%2522%253EItem%25202%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-3%2520bg-success%2522%253EItem%25203%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-4%2520bg-info%2522%253EItem%25204%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-5%2520bg-danger%2522%253EItem%25205%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-6%2520bg-secondary%2522%253EItem%25206%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 479px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>  
+          </div>
+
+
+          <!-- Two column grid -->
+          <div>
+            <h4>Two Column Grid</h4>
+            <p>You can create a grid with 2 columns by using the <span class="class-names">grid-col-2</span> classname.
+            <div class="example-container">
+                <div class="grid grid-col-2">
+                    <div class="item-1 bg-danger">Item 1</div>
+                    <div class="item-2 bg-warning">Item 2</div>
+                    <div class="item-3 bg-success">Item 3</div>
+                    <div class="item-4 bg-info">Item 4</div>
+                    <div class="item-5 bg-danger">Item 5</div>
+                    <div class="item-6 bg-secondary">Item 6</div>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-2%2522%253E%250A%2509%253Cdiv%2520class%253D%2522item-1%2520bg-danger%2522%253EItem%25201%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-2%2520bg-warning%2522%253EItem%25202%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-3%2520bg-success%2522%253EItem%25203%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-4%2520bg-info%2522%253EItem%25204%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-5%2520bg-danger%2522%253EItem%25205%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522item-6%2520bg-secondary%2522%253EItem%25206%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 479px; height: 256px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+          </div>
+          <div class="only-prev-pg page-nav">
+            <button class="prev-page-btn"><a href="../TextUtilities/textUtilities.html">Previous<br>Text Utilities</a></button>
+          </div>
+          <footer class="content-footer">
+            &copy; 2022 Shuttle UI, All Rights Reserved.
+          </footer>
+        </main> 
+      </div>
+    </div>
+    
+  </body>
+</html>
