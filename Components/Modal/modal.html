@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal - Shuttle UI</title>
+    <link rel="stylesheet" href="../../documentation/docs.css"/>
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="icon" href="../../asset/img1.svg" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+    <div class="container-doc">
+      <!-- Header Section -->
+      <header>
+        <nav class="pg-navigation flex">
+            <div class="nav-brand flex">
+                <img class="round-image" alt="image of a rocket" src="../../asset/img1.svg"/>
+                <h2 class="pg-nav-title"><a href="../../index.html">Shuttle UI</a></h2>
+            </div>
+            <ul class="pg-nav-items flex">
+                <li class="cursor"><a href="../../index.html">Home</a></li>
+                <li class="cursor"><a href="../../documentation/doc.html">Documentation</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <!-- Side Navigation -->
+      <aside class="side-nav">
+        <ul class="nav-items">
+          <li class="side-nav-item"><a href="../../documentation/doc.html">Introduction</a></li>
+          <li class="side-nav-item"><a href="#">Alert</a></li>
+          <li class="side-nav-item"><a href="../Avatar/avatar.html">Avatar</a></li>
+          <li class="side-nav-item"><a href="../Badge/badge.html">Badge</a></li>
+          <li class="side-nav-item"><a href="../Button/button.html">Button</a></li>              
+          <li class="side-nav-item"><a href="../Card/card.html">Card</a></li>
+          <li class="side-nav-item"><a href="../Image/responsive-image.html">Image</a></li>
+          <li class="side-nav-item"><a href="../Input/input.html">Input</a></li>              
+          <li class="side-nav-item"><a href="../List/list.html">List</a></li>
+          <li class="side-nav-item"><a href="../Navigation/navigation.html">Navigation</a></li>
+          <li class="side-nav-item"><a href="../TextUtilities/textUtilities.html">Text Utilities</a></li>
+          <li class="side-nav-item"><a href="../Grid/grid.html">Grids</a></li>
+          <li class="side-nav-item active-side-link"><a href="#">Modal</a></li>
+      </ul>
+      </aside>
+
+      <!-- Main Page Content  --> 
+      <div class="container">
+        <!-- Modal -->
+        <main>
+          <!-- Default Modal -->
+          <div>
+            <h2>Modal</h2>
+            <p>
+            Modals are used to display some information on the top of the current page. They are like a dialogue box or pop-up window which position themselves on top of the current page usually to grab the attention of the user to perform some action or display data.
+            </p>
+            <h3>Examples</h3>
+            <p>The example of a default modal has been provided here.</p>
+            <h4>Default Modal</h4>
+            <p>Use the <span class="class-names">modal</span> classname to create a modal. Add the <span class="class-names">modal-header</span> classname to the modal header which may include the modal title. You can also add the dismiss button by using the <span class="class-names">modal-dismiss</span> classname. Include the modal content inside the container having <span class="class-names">modal-body</span> classname. Use the <span class="class-names">modal-footer </span> classname to create the modal footer and to create the buttons, use the <span class="class-names">modal-btn</span> classname. </p>
+            <div class="example-container flex-centered">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3>Modal Header</h3>
+                        <div class="modal-dismiss"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="modal-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod facere, nihil unde provident ex impedit quam. Magni, excepturi praesentium ex labore a, natus illo dignissimos repellendus tenetur, perferendis unde nobis?
+                    </div>
+                    <div class="modal-footer">
+                      <button class="modal-btn border border-primary bg-primary">Close</button>
+                      <button class="modal-btn border border-primary bg-transparent">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28226%2C226%2C226%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=23px&dsblur=67px&wc=true&wa=true&pv=25px&ph=17px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2509%2509%253Ch3%253EModal%2520Header%253C%252Fh3%253E%250A%2509%2509%253Cdiv%2520class%253D%2522modal-dismiss%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2509%2509Lorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Quod%2520facere%252C%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520nihil%2520unde%2520provident%2520ex%2520impedit%2520quam.%2520Magni%252C%2520excepturi%2520praesentium%2520ex%250A%2520%2520%2520%2520%2520%2520%2520%2520labore%2520a%252C%2520natus%2520illo%2520dignissimos%2520repellendus%2520tenetur%252C%2520perferendis%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520unde%2520nobis%253F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522modal-btn%2520border%2520border-primary%2520bg-primary%2522%253EClose%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522modal-btn%2520border%2520border-primary%2520bg-transparent%2522%253ESave%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 783px; height: 405px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>  
+          </div>
+
+          <div class="only-prev-pg page-nav">
+            <button class="prev-page-btn"><a href="../Grid/grid.html">Previous<br>Grid</a></button>
+          </div>
+          <footer class="content-footer">
+            &copy; 2022 Shuttle UI, All Rights Reserved.
+          </footer>
+        </main> 
+      </div>
+    </div>
+    
+  </body>
+</html>

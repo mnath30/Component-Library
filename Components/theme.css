@@ -82,6 +82,9 @@
 .bg-amz-orange {
     background-color: var(--amz-header-color);
 }
+.bg-transparent {
+    background-color: transparent;
+}
 
 /* border colors */
 .border-primary {
